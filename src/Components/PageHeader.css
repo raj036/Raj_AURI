@@ -1,0 +1,76 @@
+/* ===== Common Page Header Style ===== */
+.page-header,
+.pdp-header {
+  background: #fff;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 0.5rem;
+  border: 1px solid #e5e7eb;
+  font-family: "Inter", sans-serif;
+}
+
+.page-header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.page-header .breadcrumb {
+  font-size: 0.85rem;
+  color: #6b7280;
+  margin-bottom: 0.5rem;
+}
+
+.page-header h2,
+.pdp-product-details h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0;
+  color: #111827;
+}
+
+.page-header p,
+.pdp-product-details p {
+  font-size: 0.95rem;
+  color: #6b7280;
+  margin-top: 0.25rem;
+}
+
+.page-header-actions {
+  display: flex;
+  gap: 10px;
+}
+
+/* ===== PDP Specific ===== */
+.pdp-product-card {
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  padding: 16px;
+}
+
+.pdp-product-image {
+  width: 100px;
+  height: auto;
+  border-radius: 8px;
+  margin-right: 16px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.pdp-product-details h2 {
+  font-size: 20px;
+}
+
+.pdp-product-details p {
+  font-size: 14px;
+  margin: 2px 0;
+  color: #555;
+}
+.home-icon {
+  position: relative;
+  top: 5px;
+}
+.next-icon {
+  position: relative;
+  top: 5px;
+}

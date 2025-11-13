@@ -1,0 +1,1287 @@
+{
+  "quickActions": [
+    { "title": "Add User", "desc": "Create new user", "icon": "person_add" },
+    {
+      "title": "Add Branch",
+      "desc": "Create new branch",
+      "icon": "domain_add"
+    },
+    {
+      "title": "Generate Company Report",
+      "desc": "Create comprehensive report",
+      "icon": "docs"
+    }
+  ],
+  "tasks": {
+    "assignJobs": [
+      {
+        "title": "Indoor Pest Control",
+        "company": "Tech Solutions Inc.",
+        "assigned": "Ammar Foley",
+        "priority": "High"
+      },
+      {
+        "title": "Indoor Pest Control",
+        "company": "Tech Solutions Inc.",
+        "assigned": "Ammar Foley",
+        "priority": "Medium"
+      },
+      {
+        "title": "Indoor Pest Control",
+        "company": "Tech Solutions Inc.",
+        "assigned": "Ammar Foley",
+        "priority": "Low"
+      }
+    ],
+    "overtime": [
+      {
+        "name": "Sienna Hewitt",
+        "date": "Jan 16, 2025",
+        "time": "2:10 min",
+        "location": "Rajaji Nagar"
+      },
+      {
+        "name": "Mathilde Lewis",
+        "date": "Jan 18, 2025",
+        "time": "1:30 min",
+        "location": "Rajaji Nagar"
+      }
+    ],
+    "complaints": [
+      {
+        "name": "Rahul Mehta",
+        "service": "Termite Control",
+        "priority": "High",
+        "date": "Jan 16, 2025",
+        "desc": "Service done last week but termites are still visible. Please send follow-up."
+      },
+      {
+        "name": "John Doe",
+        "service": "Termite Control",
+        "priority": "Medium",
+        "date": "Jan 16, 2025",
+        "desc": "Service done last week but termites are still visible. Please send follow-up."
+      }
+    ]
+  },
+
+  "companyOverview": {
+    "metrics": [
+      {
+        "title": "Total Branches",
+        "value": 24,
+        "subText": "Across 8 cities",
+        "icon": "home_work"
+      },
+      {
+        "title": "Active Customers",
+        "value": 2847,
+        "subText": "This quarter",
+        "icon": "group"
+      },
+      {
+        "title": "Total Employees",
+        "value": 1247,
+        "subText": "Full-time staff",
+        "icon": "person"
+      },
+      {
+        "title": "Contracts in Force",
+        "value": 987,
+        "subText": "Active agreements",
+        "icon": "work"
+      }
+    ]
+  },
+
+  "cardSection": {
+    "metrics": [
+      {
+        "title": "Total Branches",
+        "value": 45,
+        "growth": "+12%",
+        "subText": "Across 8 cities",
+        "icon": "home_work"
+      },
+      {
+        "title": "Active Customers",
+        "value": 2847,
+        "growth": "-3%",
+        "subText": "This quarter",
+        "icon": "group"
+      },
+      {
+        "title": "Total Employees",
+        "value": 1247,
+        "growth": "+8%",
+        "subText": "Full-time staff",
+        "icon": "person"
+      },
+      {
+        "title": "Contracts in Force",
+        "value": 987,
+        "growth": "+5%",
+        "subText": "Active agreements",
+        "icon": "work"
+      },
+      {
+        "title": "Contracts in Force",
+        "value": 987,
+        "growth": "+5%",
+        "subText": "Active agreements",
+        "icon": "work"
+      },
+      {
+        "title": "Contracts in Force",
+        "value": 987,
+        "growth": "+5%",
+        "subText": "Active agreements",
+        "icon": "work"
+      },
+      {
+        "title": "Contracts in Force",
+        "value": 987,
+        "growth": "+5%",
+        "subText": "Active agreements",
+        "icon": "work"
+      },
+      {
+        "title": "Contracts in Force",
+        "value": 987,
+        "growth": "+5%",
+        "subText": "Active agreements",
+        "icon": "work"
+      },
+      {
+        "title": "Contracts in Force",
+        "value": 987,
+        "growth": "+5%",
+        "subText": "Active agreements",
+        "icon": "work"
+      }
+    ]
+  },
+
+  "technicianOverview": {
+    "metrics": [
+      {
+        "title": "Total Branches",
+        "value": 24
+      },
+      {
+        "title": "Active Customers",
+        "value": 2847
+      },
+      {
+        "title": "Total Employees",
+        "value": 1247
+      }
+    ]
+  },
+  "Efficiency": {
+    "metrics": [
+      {
+        "title": "Fastest technician",
+        "value": 26,
+        "list": "View list"
+      },
+      {
+        "title": "Avg completion time",
+        "value": 49
+      },
+      {
+        "title": "Job delays",
+        "value": 12
+      }
+    ]
+  },
+  "salesOverview": {
+    "metrics": [
+      {
+        "title": "Total Branches",
+        "value": 45,
+        "growth": "+12%",
+        "subText": "Across 8 cities",
+        "icon": "home_work"
+      },
+      {
+        "title": "Active Customers",
+        "value": 2847,
+        "growth": "-3%",
+        "subText": "This quarter",
+        "icon": "group"
+      },
+      {
+        "title": "Total Employees",
+        "value": 1247,
+        "growth": "+8%",
+        "subText": "Full-time staff",
+        "icon": "person"
+      },
+      {
+        "title": "Contracts in Force",
+        "value": 987,
+        "growth": "+5%",
+        "subText": "Active agreements",
+        "icon": "work"
+      }
+    ]
+  },
+  "employeeDistribution": {
+    "roles": [
+      {
+        "label": "Sales",
+        "count": 55,
+        "percentage": 37.9,
+        "color": "#1f77b4"
+      },
+      {
+        "label": "Service Technicians",
+        "count": 40,
+        "percentage": 27.6,
+        "color": "#ff7f0e"
+      },
+      {
+        "label": "Administration",
+        "count": 25,
+        "percentage": 17.2,
+        "color": "#2ca02c"
+      },
+      {
+        "label": "Management",
+        "count": 15,
+        "percentage": 10.3,
+        "color": "#d62728"
+      },
+      {
+        "label": "Security",
+        "count": 10,
+        "percentage": 7,
+        "color": "#9467bd"
+      }
+    ]
+  },
+  "financialMetrics": [
+    {
+      "title": "Sales",
+      "value": 2114,
+      "growth": "+100%",
+      "isCurrency": true
+    },
+    {
+      "title": "Purchases",
+      "value": 5654,
+      "growth": "+100%",
+      "isCurrency": true
+    },
+    {
+      "title": "Expense",
+      "value": 654,
+      "growth": "-30%",
+      "isCurrency": true
+    },
+    {
+      "title": "Profit Margin %",
+      "value": 68,
+      "growth": "+100%",
+      "isCurrency": false
+    }
+  ],
+  "customerInsights": [
+    {
+      "title": "Sales",
+      "value": 2114,
+      "growth": "+100%",
+      "isCurrency": true
+    },
+    {
+      "title": "Purchases",
+      "value": 5654,
+      "growth": "+100%",
+      "isCurrency": true
+    }
+  ],
+  "subscriptionAnalytics": [
+    {
+      "title": "Sales",
+      "value": 2114,
+
+      "isCurrency": true
+    },
+    {
+      "title": "Purchases",
+      "value": 5654,
+
+      "isCurrency": true
+    },
+    {
+      "title": "Sales",
+      "value": 2114,
+
+      "isCurrency": true
+    },
+    {
+      "title": "Purchases",
+      "value": 5654,
+
+      "isCurrency": true
+    }
+  ],
+  "accountReceivables": [
+    {
+      "title": "Sales",
+      "value": 2114,
+      "growth": "+100%",
+      "isCurrency": true
+    },
+    {
+      "title": "Purchases",
+      "value": 5654,
+      "growth": "+100%",
+      "isCurrency": true
+    }
+  ],
+  "revenueTracker": [
+    {
+      "title": "Sales",
+      "value": 2114,
+      "growth": "+100%",
+      "isCurrency": true
+    },
+    {
+      "title": "Purchases",
+      "value": 5654,
+      "growth": "+100%",
+      "isCurrency": true
+    }
+  ],
+  "branchComparison": {
+    "data": [
+      { "name": "HSR", "sales": 45, "expenses": 30, "profit": 25 },
+      { "name": "Kormnagala", "sales": 30, "expenses": 40, "profit": 30 },
+      { "name": "Rajaji Nagar", "sales": 50, "expenses": 35, "profit": 15 },
+      { "name": "BTM", "sales": 40, "expenses": 30, "profit": 30 },
+      { "name": "HSR Sec 2", "sales": 55, "expenses": 20, "profit": 25 },
+      { "name": "Kormnagala", "sales": 50, "expenses": 30, "profit": 20 },
+      { "name": "Rajaji Nagar", "sales": 35, "expenses": 45, "profit": 20 },
+      { "name": "HSR", "sales": 50, "expenses": 25, "profit": 25 },
+      { "name": "Balanadur", "sales": 35, "expenses": 30, "profit": 35 },
+      { "name": "Hightech City", "sales": 45, "expenses": 20, "profit": 35 },
+      { "name": "Vega City", "sales": 30, "expenses": 40, "profit": 30 }
+    ]
+  },
+
+  "inventory": {
+    "usageTrends": [
+      { "month": "Jan", "qty": 120 },
+      { "month": "Feb", "qty": 150 },
+      { "month": "Mar", "qty": 180 },
+      { "month": "Apr", "qty": 100 },
+      { "month": "May", "qty": 200 },
+      { "month": "Jun", "qty": 170 },
+      { "month": "Ju1", "qty": 190 },
+      { "month": "Aug", "qty": 210 },
+      { "month": "Sep", "qty": 130 },
+      { "month": "Oct", "qty": 140 },
+      { "month": "Nov", "qty": 160 },
+      { "month": "Dec", "qty": 110 }
+    ],
+    "topConsumed": [
+      {
+        "title": "Indoor Pest Control Spray",
+        "brand": "Brand-Pesto",
+        "sku": "SKU: PROD-001",
+        "image": null,
+        "qty": 255
+      },
+      {
+        "title": "Indoor Pest Control Spray",
+        "brand": "Brand-Pesto",
+        "sku": "SKU: PROD-001",
+        "image": null,
+        "qty": 100
+      },
+      {
+        "title": "Indoor Pest Control Spray",
+        "brand": "Brand-Pesto",
+        "sku": "SKU: PROD-001",
+        "image": null,
+        "qty": 75
+      },
+      {
+        "title": "Indoor Pest Control Spray",
+        "brand": "Brand-Pesto",
+        "sku": "SKU: PROD-001",
+        "image": null,
+        "qty": 50
+      },
+      {
+        "title": "Indoor Pest Control Spray",
+        "brand": "Brand-Pesto",
+        "sku": "SKU: PROD-001",
+        "image": null,
+        "qty": 12
+      }
+    ],
+    "lowStock": [
+      {
+        "title": "Indoor Pest Control Spray",
+        "brand": "Brand-Pesto",
+        "sku": "SKU: PROD-001",
+        "image": null,
+        "qty": 5
+      },
+      {
+        "title": "Indoor Pest Control Spray",
+        "brand": "Brand-Pesto",
+        "sku": "SKU: PROD-001",
+        "image": null,
+        "qty": 100
+      },
+      {
+        "title": "Indoor Pest Control Spray",
+        "brand": "Brand-Pesto",
+        "sku": "SKU: PROD-001",
+        "image": null,
+        "qty": 75
+      },
+      {
+        "title": "Indoor Pest Control Spray",
+        "brand": "Brand-Pesto",
+        "sku": "SKU: PROD-001",
+        "image": null,
+        "qty": 50
+      },
+      {
+        "title": "Indoor Pest Control Spray",
+        "brand": "Brand-Pesto",
+        "sku": "SKU: PROD-001",
+        "image": null,
+        "qty": 12
+      }
+    ],
+    "expiring": [
+      {
+        "title": "Indoor Pest Control Spray",
+        "brand": "Brand-Pesto",
+        "sku": "SKU: PROD-001",
+        "image": null,
+        "date": "23/03/27"
+      },
+      {
+        "title": "Indoor Pest Control Spray",
+        "brand": "Brand-Pesto",
+        "sku": "SKU: PROD-001",
+        "image": null,
+        "date": "12/09/27"
+      },
+      {
+        "title": "Indoor Pest Control Spray",
+        "brand": "Brand-Pesto",
+        "sku": "SKU: PROD-001",
+        "image": null,
+        "date": "05/11/27"
+      },
+      {
+        "title": "Indoor Pest Control Spray",
+        "brand": "Brand-Pesto",
+        "sku": "SKU: PROD-001",
+        "image": null,
+        "date": "14/01/28"
+      },
+      {
+        "title": "Indoor Pest Control Spray",
+        "brand": "Brand-Pesto",
+        "sku": "SKU: PROD-001",
+        "image": null,
+        "date": "30/06/28"
+      }
+    ]
+  },
+
+  "chartData": [
+    { "day": "Mon", "completed": 120, "pending": 80 },
+    { "day": "Tue", "completed": 150, "pending": 90 },
+    { "day": "Wed", "completed": 140, "pending": 110 },
+    { "day": "Thu", "completed": 160, "pending": 115 },
+    { "day": "Fri", "completed": 180, "pending": 120 },
+    { "day": "Sat", "completed": 170, "pending": 125 },
+    { "day": "Sun", "completed": 200, "pending": 140 }
+  ],
+  "forecast": {
+    "metrics": {
+      "sales": 2114,
+      "services": 265,
+      "inventoryUsage": 82
+    },
+    "chartData": [
+      {
+        "month": "Jan",
+        "actualSales": 400000,
+        "projectedSales": 600000,
+        "serviceDemand": 200000
+      },
+      {
+        "month": "Feb",
+        "actualSales": 500000,
+        "projectedSales": 700000,
+        "serviceDemand": 250000
+      },
+      {
+        "month": "Mar",
+        "actualSales": 600000,
+        "projectedSales": 750000,
+        "serviceDemand": 300000
+      },
+      {
+        "month": "Jun",
+        "actualSales": 2400000,
+        "projectedSales": 3500000,
+        "serviceDemand": 1500000
+      }
+    ]
+  },
+  "branches": [
+    { "name": "HSR", "sales": 6500000 },
+    { "name": "Koramangala", "sales": 4000000 },
+    { "name": "Rajaji", "sales": 3500000 }
+  ],
+
+  "topPerformers": {
+    "labels": [
+      "Sales",
+      "Service Technicians",
+      "Administration",
+      "Management",
+      "Support"
+    ],
+    "datasets": [
+      {
+        "data": [25, 20, 15, 10, 20],
+        "backgroundColor": [
+          "#2E90FA",
+          "#53B1FD",
+          "#84CAFF",
+          "#B2DDFF",
+          "#D1E9FF"
+        ]
+      }
+    ]
+  },
+  "planDistribution": {
+    "labels": ["Basic", "Pro", "Enterprise"],
+    "datasets": [
+      {
+        "data": [25, 20, 15],
+        "backgroundColor": ["#D1E9FF", "#53B1FD", "#1570EF"]
+      }
+    ]
+  },
+  "memberShipChart": {
+    "label": "Members",
+    "monthly": {
+      "labels": [2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30],
+      "data": [
+        4300, 4350, 4400, 4420, 4450, 4500, 4550, 4570, 4600, 4650, 4700, 4750,
+        4800, 4850, 4900
+      ]
+    },
+    "annual": {
+      "labels": [
+        "Jan",
+        "Feb",
+        "Mar",
+        "Apr",
+        "May",
+        "Jun",
+        "Jul",
+        "Aug",
+        "Sep",
+        "Oct",
+        "Nov",
+        "Dec"
+      ],
+      "data": [
+        4300, 4500, 4700, 4900, 5100, 5300, 5500, 5700, 5900, 6100, 6300, 6500
+      ]
+    }
+  },
+
+  "salesdBranchData": {
+    "HSR": [420, 430, 450, 460, 470, 480, 500, 520, 540, 530, 550, 560],
+    "Kormangala": [280, 290, 300, 310, 320, 330, 340, 350, 360, 370, 380, 390],
+    "Rajaji Nagar": [
+      180, 190, 200, 210, 220, 230, 240, 250, 260, 270, 280, 290
+    ],
+    "BTM": [120, 130, 140, 150, 160, 170, 180, 190, 200, 210, 220, 230],
+    "HSR Sec 2": [90, 100, 110, 120, 125, 130, 140, 150, 160, 165, 170, 175],
+    "Hightech City": [60, 70, 80, 90, 95, 100, 110, 120, 130, 140, 150, 160]
+  },
+
+  "defaultBranches": [
+    "HSR",
+    "Kormangala",
+    "Rajaji Nagar",
+    "BTM",
+    "HSR Sec 2",
+    "Hightech City"
+  ],
+
+  "SalesMetrics": [
+    {
+      "title": "Confirmed Orders",
+      "value": 2114,
+      "growth": "+100%",
+      "isCurrency": true
+    },
+    {
+      "title": "Pending Orders",
+      "value": 5654,
+      "growth": "+100%",
+      "isCurrency": true
+    },
+    {
+      "title": "Cancelled Orders",
+      "value": 654,
+      "growth": "+30%",
+      "isCurrency": true
+    }
+  ],
+
+  "BranchMetrics": [
+    {
+      "title": "Total Revenue",
+      "value": 2114,
+      "growth": "+100%",
+      "isCurrency": true
+    },
+    {
+      "title": "Service Efficiency",
+      "value": "98%",
+      "growth": "+100%",
+      "isCurrency": true
+    },
+    {
+      "title": "Active Technicians",
+      "value": 24,
+
+      "isCurrency": true
+    },
+    {
+      "title": "Idle Technicians",
+      "value": 32,
+
+      "isCurrency": true
+    }
+  ],
+  "ServicePerformance": {
+    "branch": "HSR",
+    "metrics": [
+      { "title": "Scheduled services", "value": 234 },
+      { "title": "Completed services", "value": 24 },
+      { "title": "Pending services", "value": 128 }
+    ],
+    "tabs": ["Today", "7 days", "30 days", "6 months", "12 months"],
+    "chartData": [
+      { "day": "Mon", "completed": 2200, "pending": 1500, "scheduled": 2000 },
+      { "day": "Tue", "completed": 2300, "pending": 1600, "scheduled": 2300 },
+      { "day": "Wed", "completed": 2400, "pending": 1700, "scheduled": 2200 },
+      { "day": "Thu", "completed": 2600, "pending": 1900, "scheduled": 2150 },
+      { "day": "Fri", "completed": 2700, "pending": 2100, "scheduled": 2100 },
+      { "day": "Sat", "completed": 2800, "pending": 2300, "scheduled": 2000 },
+      { "day": "Sun", "completed": 3000, "pending": 2400, "scheduled": 2000 }
+    ]
+  },
+  "CustomerFeedbackTechnician": {
+    "branch": "HSR",
+    "metrics": [
+      { "title": "Customer Overall Ratings", "value": 4.8 },
+      { "title": "Customer Complaints", "value": 15 }
+    ],
+    "tabs": ["Today", "7 days", "30 days", "6 months", "12 months"],
+    "chartData": [
+      { "day": "Mon", "completed": 2200, "pending": 1500 },
+      { "day": "Tue", "completed": 2300, "pending": 1600 },
+      { "day": "Wed", "completed": 2400, "pending": 1700 },
+      { "day": "Thu", "completed": 2600, "pending": 1900 },
+      { "day": "Fri", "completed": 2700, "pending": 2100 },
+      { "day": "Sat", "completed": 2800, "pending": 2300 },
+      { "day": "Sun", "completed": 3000, "pending": 2400 }
+    ]
+  },
+  "ServicePerformance1": {
+    "metrics": [
+      { "title": "Service Complain", "value": 2 },
+      { "title": "Avg Completion Time", "value": "30:30 min" }
+    ]
+  },
+  "forecastMetrics": [
+    {
+      "title": "Total Revenue",
+      "value": 2114,
+      "growth": "+100%",
+      "isCurrency": true
+    },
+    {
+      "title": "Service Efficiency",
+      "value": "98%",
+      "growth": "+100%",
+      "isCurrency": false
+    },
+    {
+      "title": "Active Technicians",
+      "value": 24,
+
+      "isCurrency": true
+    }
+  ],
+  "accountFinancialMetrics": [
+    {
+      "title": "Sales",
+      "value": "4,56,789",
+      "growth": "+16%",
+      "isCurrency": true
+    },
+    {
+      "title": "Purchases",
+      "value": "2,34,567",
+      "growth": "+8%",
+      "isCurrency": false
+    },
+    {
+      "title": "Profit",
+      "value": "86,276",
+      "growth": "+5%",
+      "isCurrency": true
+    },
+    {
+      "title": "Expenses",
+      "value": "1,16,789",
+      "growth": "-30%",
+      "isCurrency": true
+    }
+  ],
+  "branchForecastMetrics": [
+    {
+      "title": "Sales",
+      "value": 2114,
+      "growth": "+100%",
+      "isCurrency": true
+    },
+    {
+      "title": "Service Demand",
+      "value": 527,
+      "growth": "+15%",
+      "isCurrency": true
+    },
+    {
+      "title": "Inventory Requirement",
+      "value": "82%",
+      "isCurrency": false
+    }
+  ],
+  "forcastChartData": [
+    {
+      "day": "Mon",
+      "Actual Sales": "22,00,000",
+      "Projected Sales": "15,00,000",
+      "Service Demand": "11,00,000",
+      "revenue": 2400000
+    },
+    {
+      "day": "Tue",
+      "Actual Sales": "23,00,000",
+      "Projected Sales": "16,00,000",
+      "Service Demand": "12,00,000",
+      "revenue": 2400000
+    },
+    {
+      "day": "Wed",
+      "Actual Sales": "24,00,000",
+      "Projected Sales": "17,00,000",
+      "Service Demand": "13,00,000",
+      "revenue": 2400000
+    },
+    {
+      "day": "Thu",
+      "Actual Sales": "26,00,000",
+      "Projected Sales": "19,00,000",
+      "Service Demand": "14,00,000",
+      "revenue": 2400000
+    },
+    {
+      "day": "Fri",
+      "Actual Sales": "27,00,000",
+      "Projected Sales": "21,00,000",
+      "Service Demand": "15,00,000",
+      "revenue": 2400000
+    },
+    {
+      "day": "Sat",
+      "Actual Sales": "28,00,000",
+      "Projected Sales": "23,00,000",
+      "Service Demand": "16,00,000",
+      "revenue": 2400000
+    },
+    {
+      "day": "Sun",
+      "Actual Sales": "30,00,000",
+      "Projected Sales": "24,00,000",
+      "Service Demand": "18,50,000",
+      "revenue": 2400000
+    }
+  ],
+  "forcastChartData": [
+    {
+      "day": "Mon",
+      "Actual Sales": "22,00,000",
+      "Projected Sales": "15,00,000",
+      "Service Demand": "11,00,000",
+      "revenue": 2400000
+    },
+    {
+      "day": "Tue",
+      "Actual Sales": "23,00,000",
+      "Projected Sales": "16,00,000",
+      "Service Demand": "12,00,000",
+      "revenue": 2400000
+    },
+    {
+      "day": "Wed",
+      "Actual Sales": "24,00,000",
+      "Projected Sales": "17,00,000",
+      "Service Demand": "13,00,000",
+      "revenue": 2400000
+    },
+    {
+      "day": "Thu",
+      "Actual Sales": "26,00,000",
+      "Projected Sales": "19,00,000",
+      "Service Demand": "14,00,000",
+      "revenue": 2400000
+    },
+    {
+      "day": "Fri",
+      "Actual Sales": "27,00,000",
+      "Projected Sales": "21,00,000",
+      "Service Demand": "15,00,000",
+      "revenue": 2400000
+    },
+    {
+      "day": "Sat",
+      "Actual Sales": "28,00,000",
+      "Projected Sales": "23,00,000",
+      "Service Demand": "16,00,000",
+      "revenue": 2400000
+    },
+    {
+      "day": "Sun",
+      "Actual Sales": "30,00,000",
+      "Projected Sales": "24,00,000",
+      "Service Demand": "18,50,000",
+      "revenue": 2400000
+    }
+  ],
+  "dateTabs": ["Today", "7 days", "30 days", "6 months", "12 months"],
+  "dateTabs1": ["6 months", "12 months"],
+  "high": ["High", "Low", "Medium"],
+  "quarterTabs": ["Quarter 1", "Quarter 2", "Quarter 3", "Quarter 4"],
+
+  "branchOverview": {
+    "metrics": [
+      {
+        "title": "Employees",
+        "value": 1247,
+        "icon": "group"
+      },
+      {
+        "title": "Active Customers",
+        "value": 1847,
+        "icon": "group"
+      },
+      {
+        "title": "Scheduled services",
+        "value": 234,
+        "icon": "group"
+      },
+      {
+        "title": "Scheduled services",
+        "value": 234,
+        "icon": "group"
+      }
+    ]
+  },
+
+  "ServiceTracker": {
+    "branch": "HSR",
+    "metrics": [
+      { "title": "Scheduled Job", "value": 234 },
+      { "title": "Completed Job", "value": 24 },
+      { "title": "Technician Assignment", "value": 10 }
+    ],
+    "tabs": ["Today", "7 days", "30 days", "6 months", "12 months"],
+    "chartData": [
+      { "day": "Mon", "completed": 2200, "pending": 1500 },
+      { "day": "Tue", "completed": 2300, "pending": 1600 },
+      { "day": "Wed", "completed": 2400, "pending": 1700 },
+      { "day": "Thu", "completed": 2600, "pending": 1900 },
+      { "day": "Fri", "completed": 2700, "pending": 2100 },
+      { "day": "Sat", "completed": 2800, "pending": 2300 },
+      { "day": "Sun", "completed": 3000, "pending": 2400 }
+    ]
+  },
+  "technicianPerformance": {
+    "branch": "HSR",
+    "metrics": [
+      { "title": "Job count per technician", "value": 4.5 },
+      { "title": "Avg Completion Time", "value": "3.30 min" },
+      { "title": "Ratings", "value": 4.8 }
+    ],
+    "tabs": ["Today", "7 days", "30 days", "6 months", "12 months"],
+    "chartData": [
+      { "day": "Mon", "completed": 2200, "pending": 1500 },
+      { "day": "Tue", "completed": 2300, "pending": 1600 },
+      { "day": "Wed", "completed": 2400, "pending": 1700 },
+      { "day": "Thu", "completed": 2600, "pending": 1900 },
+      { "day": "Fri", "completed": 2700, "pending": 2100 },
+      { "day": "Sat", "completed": 2800, "pending": 2300 },
+      { "day": "Sun", "completed": 3000, "pending": 2400 }
+    ]
+  },
+
+  "salesAndOrder": [
+    {
+      "title": "Confirmed Orders",
+      "value": "₹ 1,02,114",
+      "growth": "+100%",
+      "isCurrency": true
+    },
+    {
+      "title": "Top Customers",
+      "value": "456",
+      "isCurrency": true
+    },
+    {
+      "title": "Branch Revenue",
+      "value": "₹ 2,35,684",
+
+      "growth": "+30%",
+      "isCurrency": true
+    }
+  ],
+
+  "saleAndOrderChartData": [
+    {
+      "day": "Mon",
+      "Sales": "22,00,000",
+      "Revenue": "15,00,000",
+      "Service Demand": "11,00,000",
+      "revenue": 2400000
+    },
+    {
+      "day": "Tue",
+      "Sales": "23,00,000",
+      "Revenue": "16,00,000",
+      "Service Demand": "12,00,000",
+      "revenue": 2400000
+    },
+    {
+      "day": "Wed",
+      "Sales": "24,00,000",
+      "Revenue": "17,00,000",
+      "Service Demand": "13,00,000",
+      "revenue": 2400000
+    },
+    {
+      "day": "Thu",
+      "Sales": "26,00,000",
+      "Revenue": "19,00,000",
+      "Service Demand": "14,00,000",
+      "revenue": 2400000
+    },
+    {
+      "day": "Fri",
+      "Sales": "27,00,000",
+      "Revenue": "21,00,000",
+      "Service Demand": "15,00,000",
+      "revenue": 2400000
+    },
+    {
+      "day": "Sat",
+      "Sales": "28,00,000",
+      "Revenue": "23,00,000",
+      "Service Demand": "16,00,000",
+      "revenue": 2400000
+    },
+    {
+      "day": "Sun",
+      "Sales": "30,00,000",
+      "Revenue": "24,00,000",
+      "Service Demand": "18,50,000",
+      "revenue": 2400000
+    }
+  ],
+
+  "techniciansData": [
+    {
+      "name": "Sienna Hewitt",
+      "email": "sienna@AuriFex.com",
+      "img": "https://randomuser.me/api/portraits/women/1.jpg",
+      "jobCount": 20,
+      "avgTime": "2:30 min",
+      "rating": 5
+    },
+    {
+      "name": "Ammar Foley",
+      "email": "ammar@AuriFex.com",
+      "img": "https://randomuser.me/api/portraits/men/2.jpg",
+      "jobCount": 15,
+      "avgTime": "4:15 min",
+      "rating": 4.5
+    },
+    {
+      "name": "Pippa Wilkinson",
+      "email": "pippa@AuriFex.com",
+      "img": "",
+      "jobCount": 12,
+      "avgTime": "3:25 min",
+      "rating": 5
+    },
+    {
+      "name": "Olly Schroeder",
+      "email": "olly@AuriFex.com",
+      "img": "https://randomuser.me/api/portraits/men/3.jpg",
+      "jobCount": 23,
+      "avgTime": "1:45 min",
+      "rating": 5
+    },
+    {
+      "name": "Mathilde Lewis",
+      "email": "mathilde@AuriFex.com",
+      "img": "https://randomuser.me/api/portraits/women/4.jpg",
+      "jobCount": 27,
+      "avgTime": "5:30 min",
+      "rating": 4.5
+    }
+  ],
+
+  "pendingActivities": {
+    "sections": [
+      {
+        "title": "Quotations approval",
+        "badge": { "label": "3 Pending", "color": "danger" },
+        "icon": "bi-file-earmark-text",
+        "cards": [
+          {
+            "title": "Indoor Pest Control Spray",
+            "priority": "High",
+            "priorityColor": "danger text-white",
+            "amount": "₹ 1,03,200",
+            "due": "Due in 2 hours",
+            "buttons": ["Review", "Approve"]
+          },
+          {
+            "title": "Indoor Pest Control Spray",
+            "priority": "Medium",
+            "priorityColor": "warning text-white",
+            "amount": "₹ 5,01,570",
+            "due": "Due in 22 hours",
+            "buttons": ["Review", "Approve"]
+          },
+          {
+            "title": "Indoor Pest Control Spray",
+            "priority": "Low",
+            "priorityColor": "light text-dark border",
+            "amount": "₹ 56,200",
+            "due": "Due in 3 days",
+            "buttons": ["Review", "Approve"]
+          }
+        ]
+      },
+      {
+        "title": "Follow-ups due",
+        "badge": { "label": "4 Schedules", "color": "primary" },
+        "icon": "bi-telephone",
+        "cards": [
+          {
+            "title": "Indoor Pest Control Spray",
+            "priority": "High",
+            "priorityColor": "danger text-white",
+            "desc": "Product demo scheduled",
+            "due": "2:00 pm Today",
+            "buttons": ["Call", "Done"]
+          },
+          {
+            "title": "Indoor Pest Control Spray",
+            "priority": "Medium",
+            "priorityColor": "warning text-white",
+            "desc": "Proposal follow-up call",
+            "due": "Tomorrow 10:00 am",
+            "buttons": ["Call", "Done"]
+          },
+          {
+            "title": "Indoor Pest Control Spray",
+            "priority": "Low",
+            "priorityColor": "light text-dark border",
+            "desc": "Contract negotiation",
+            "due": "Friday 2:00 pm",
+            "buttons": ["Call", "Done"]
+          }
+        ]
+      }
+    ]
+  },
+
+  "salesTaskCard": {
+    "sections": [
+      {
+        "title": "Action Items",
+        "completed": "0/3 Completed",
+        "tasks": [
+          {
+            "title": "Quotation Approval Pending",
+            "roles": ["Admin", "Branch Admin", "Sales Manager"],
+            "description": "Review and approve newly generated quotations before they are sent to clients or converted into work orders.",
+            "buttons": ["Reject", "Approve"]
+          },
+          {
+            "title": "Purchase Order Approval Pending",
+            "roles": ["Admin", "Branch Admin"],
+            "description": "Approve or reject new purchase orders created by staff or branches. Ensures all procurements are authorized before execution.",
+            "buttons": ["Reject", "Approve"]
+          },
+          {
+            "title": "Expense Claim Approval",
+            "roles": ["Admin", "Finance", "Accounts Manager"],
+            "description": "Approve or reject expense claims submitted by staff.",
+            "buttons": ["Reject", "Approve"]
+          }
+        ]
+      },
+      {
+        "title": "Critical Alerts",
+        "completed": "0/3 Completed",
+        "tasks": [
+          {
+            "title": "Credit Limit Exceeded",
+            "roles": ["Admin", "Finance", "Accounts Manager"],
+            "description": "Customer or branch exceeded approved credit limit requires review to prevent risk.",
+            "buttons": ["Escalate", "Resolve Now"]
+          },
+          {
+            "title": "License or Tax Filing Deadline",
+            "roles": ["Admin", "Finance"],
+            "description": "Reminder for upcoming statutory license renewals or tax filing deadlines.",
+            "buttons": ["Resolve Now"]
+          },
+          {
+            "title": "Payment Overdue Alert",
+            "roles": ["Company Admin", "Branch Admin", "Accounts"],
+            "description": "Notify overdue payments from customers or branches.",
+            "buttons": ["Resolve Now"]
+          }
+        ]
+      },
+      {
+        "title": "Reminders & Daily Tasks",
+        "completed": "0/3 Completed",
+        "tasks": [
+          {
+            "title": "Daily Dispatch Summary",
+            "roles": ["Branch Admin", "Staff"],
+            "description": "Review daily dispatch summary and confirm job completions.",
+            "buttons": ["View Report"]
+          },
+          {
+            "title": "Customer Feedback Follow-up",
+            "roles": ["Sales", "Branch Admin"],
+            "description": "Contact customers to gather feedback on completed pest control services.",
+            "buttons": ["Follow Up"]
+          },
+          {
+            "title": "Weekly Attendance Review",
+            "roles": ["HR", "Branch Admin"],
+            "description": "Check weekly attendance reports to track leaves and absences.",
+            "buttons": ["View Report"]
+          }
+        ]
+      }
+    ]
+  },
+
+  "accountPayable": {
+    "supplierPayments": [
+      {
+        "name": "Kormngala",
+        "amount": 103200,
+        "priority": "High",
+        "due": "Due today"
+      },
+      {
+        "name": "Belendur",
+        "amount": 250000,
+        "priority": "Medium",
+        "due": "Due in 9 days"
+      },
+      {
+        "name": "Hightech City",
+        "amount": 75000,
+        "priority": "Low",
+        "due": "Due date: 15-11-2025"
+      },
+      {
+        "name": "Rajaji Nagar",
+        "amount": 50000,
+        "priority": "Low",
+        "due": "Due date: 01-12-2025"
+      },
+      {
+        "name": "Ocean Breeze",
+        "amount": 100000,
+        "priority": "Low",
+        "due": "Due date: 30-11-2025"
+      },
+      {
+        "name": "Mountain Retreat",
+        "amount": 40000,
+        "priority": "Low",
+        "due": "Due date: 20-12-2025"
+      }
+    ]
+  },
+
+  "alerts": {
+    "alerts": [
+      {
+        "icon": "approval",
+        "title": "Pending Company Approvals",
+        "desc": "Companies awaiting admin review.",
+        "buttonText": "Review Companies"
+      },
+      {
+        "icon": "subscriptions",
+        "title": "Subscription Expiry",
+        "desc": "Renewal reminder.",
+        "buttonText": "View Subscriptions"
+      },
+      {
+        "icon": "description",
+        "title": "Document Mismatch",
+        "desc": "Invalid document flagged.",
+        "buttonText": "View Corrections"
+      },
+      {
+        "icon": "bar_chart",
+        "title": "Server Cost Spike",
+        "desc": "Infrastructure cost exceeded threshold by 18%",
+        "buttonText": "View Infrastructure"
+      },
+      {
+        "icon": "show_chart",
+        "title": "Profit Drop Warning",
+        "desc": "Month-over-month profit dropped by 12%",
+        "buttonText": "View Financial Analytics"
+      }
+    ]
+  }
+}

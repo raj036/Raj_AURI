@@ -1,0 +1,116 @@
+.pdp-container {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  height: 80vh;
+}
+
+.back-btn {
+  background: none;
+  border: none;
+  color: #1a73e8;
+  cursor: pointer;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.pdp-header {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  font-family: "Inter", sans-serif;
+  color: #535862;
+}
+
+.pdp-image {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+
+.pdp-info h2 {
+  margin: 0;
+  font-size: 18px;
+  font-family: "Inter", sans-serif;
+}
+
+.pdp-info p {
+  margin: 4px 0;
+  font-size: 14px;
+  color: #666;
+  font-family: "Inter", sans-serif;
+}
+
+.pdp-content {
+  margin-top: 16px;
+  height: "40vh !important";
+  font-family: "Inter", sans-serif;
+}
+
+.info-card {
+  border: 1px solid #e9eaeb;
+  border-radius: 8px;
+  padding: 10px;
+  max-width: 500px;
+  height: 450px;
+  overflow-y: scroll;
+  font-family: "Inter", sans-serif;
+}
+.back-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: none;
+  border: none;
+  color: #374151;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  margin-bottom: 12px;
+  padding: 4px 0;
+  transition: color 0.2s ease;
+}
+
+.back-button:hover {
+  color: #111827;
+}
+
+.back-button svg {
+  font-size: 18px;
+}
+
+.info-row {
+  display: flex;
+  justify-content: flex-start;
+  gap: 100px;
+  padding: 18px 0;
+  border-bottom: 1px solid #e9eaeb;
+  font-family: "Inter", sans-serif;
+}
+
+.info-row:last-child {
+  border-bottom: none;
+}
+
+.info-label {
+  font-weight: 400;
+  color: #535862;
+  width: 150px;
+  font-family: "Inter", sans-serif;
+}
+
+.info-value {
+  font-weight: 600;
+  color: #414651;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  font-family: "Inter", sans-serif;
+}
+
+@media (max-width: 768px) {
+  .pdp-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

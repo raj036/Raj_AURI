@@ -1,0 +1,82 @@
+.delete-main {
+  width: 400px;
+  height: 254px;
+  background-color: #ffffff;
+  background-image: url("../Inventory/Background-pattern.svg");
+  background-repeat: no-repeat;
+  background-position: translateY(-50%);
+  background-size: 50%;
+  border-radius: 16px;
+}
+.delete-first {
+  width: 400px;
+  height: 154px;
+}
+.delete-icon {
+  position: relative;
+  left: 15px;
+  top: 15px;
+}
+.close-icon {
+  position: relative;
+  left: 290px;
+  top: 0px;
+}
+.delete-title {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  color: #181d27;
+  position: relative;
+  top: 22px;
+  left: 15px;
+}
+.delete-paragraph {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  color: #535862;
+  position: relative;
+  top: 30px;
+  left: 15px;
+  width: 352px;
+  height: 40px;
+}
+.delete-second {
+  width: 400px;
+  height: 100px;
+}
+.cancel-btn {
+  width: 170px;
+  height: 44px;
+  border-radius: 8px;
+  border: 1px solid #d5d7da;
+  background-color: #ffffff;
+  font-family: "Inter", sans-serif;
+  position: relative;
+  left: 25px;
+  top: 25px;
+  color: #414651;
+  font-weight: 600;
+}
+.toast-wrapper {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 9999;
+  min-width: 250px;
+}
+
+.delete-btn {
+  width: 170px;
+  height: 44px;
+  border-radius: 8px;
+  background-color: #d92d20;
+  border-radius: 8px;
+  font-family: "Inter", sans-serif;
+  position: relative;
+  color: #ffffff;
+  font-weight: 600;
+  border: 2px solid #ffffff1f;
+  top: 25px;
+  left: 38px;
+}

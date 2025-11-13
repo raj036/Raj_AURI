@@ -1,0 +1,136 @@
+.editable-table {
+  margin-top: 1rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  background: white;
+  overflow: hidden;
+  font-family: "Inter", sans-serif;
+  height: auto;
+}
+
+.editable-table table {
+  width: 100%;
+  height: auto;
+  border-collapse: collapse;
+  table-layout: fixed; /* ✅ Keeps all columns aligned */
+}
+
+.editable-table th {
+  background: #f9fafb;
+  font-weight: 600;
+  color: #374151;
+  padding: 0.9rem 1rem;
+  text-align: left;
+  border-bottom: 1px solid #e5e7eb;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  white-space: nowrap;
+  color: #535862;
+  font-family: "Inter", sans-serif;
+}
+
+.editable-table tbody {
+  display: block; /* ✅ scrollable container */
+  max-height: 46vh;
+  overflow-y: auto;
+  width: 100%;
+  font-family: "Inter", sans-serif;
+}
+
+.editable-table thead,
+.editable-table tbody tr {
+  display: table;
+  width: 100%;
+  table-layout: fixed; /* ✅ ensures alignment */
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+}
+
+.editable-table th,
+.editable-table td {
+  padding: 0.9rem 1rem;
+  text-align: left; /* ✅ everything left */
+  border-bottom: 1px solid #f3f4f6;
+  font-size: 0.95rem;
+  vertical-align: middle;
+  font-family: "Inter", sans-serif;
+  color: #535862;
+}
+.editable-table input {
+  padding: 10px 12px;
+  font-size: 14px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  background: #fff;
+  color: #111827;
+  outline: none;
+}
+
+.product-line,
+.brand-line {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.cell-icon.small {
+  width: 14px;
+  height: 14px;
+  opacity: 0.7; /* makes the brand icon feel lighter */
+}
+
+.sub-line {
+  font-size: 0.85rem;
+  color: #6b7280; /* gray-500 for subtitle */
+  margin-left: 47px;
+}
+.product-title,
+.sub-line {
+  display: flex;
+  align-items: center; /* ✅ ensures text aligns to icon center */
+}
+.product-line {
+  display: flex;
+  align-items: center; /* ✅ vertically centers icon with text */
+  gap: 8px;
+}
+
+.cell-icon {
+  width: 40px; /* adjust size as needed */
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  object-fit: contain;
+}
+tfoot .total-row {
+  background: #f9fafb; /* light background */
+  font-weight: 600;
+  color: #111827;
+}
+
+tfoot .total-row td {
+  border-top: 2px solid #e5e7eb;
+  padding: 0.9rem 1rem;
+}
+
+.add-row {
+  text-align: left;
+  padding: 10px;
+  height: 0 !important;
+  margin-bottom: 0 !important;
+}
+.add-row td {
+  border: none !important;
+}
+.add-btn {
+  width: 141px;
+  height: 40px;
+  border-radius: 8px;
+  border: 1px solid #d5d7da;
+  font-family: "Inter", sans-serif;
+  background-color: #ffffff;
+  font-weight: 600;
+  color: #414651;
+}

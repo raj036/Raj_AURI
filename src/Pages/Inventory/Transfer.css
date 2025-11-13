@@ -1,0 +1,200 @@
+.tansfer-main {
+  width: 699px;
+  height: 416px;
+  border: 1px solid #e9eaeb;
+  border-radius: 16px;
+  background-color: #ffffff;
+  position: absolute;
+  top: 19%;
+  left: 25%;
+}
+.main-transfer-head-hero {
+  width: 699px;
+  height: 344px;
+}
+.transfer-head-hero {
+  width: 651px;
+  height: 272px;
+}
+.avatar-text {
+  width: 364px;
+  height: 92px;
+}
+.transfer-product {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  size: 14px;
+  color: #181d27;
+}
+.transfer-brand {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  size: 14px;
+  color: #535862;
+}
+.transfer-proid {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  size: 14px;
+  color: #535862;
+}
+.transfer-image {
+  position: relative;
+  top: 30px;
+  left: 30px;
+}
+.transfer-text {
+  position: absolute;
+  top: 30px;
+  left: 100px;
+}
+.label1 {
+  font-weight: 500;
+  font-size: 14px;
+  font-family: "Inter", sans-serif;
+  color: #414651;
+  position: absolute;
+  top: 124px;
+  left: 24px;
+}
+.select1 {
+  width: 300.5px;
+  height: 40px;
+  border-radius: 8px;
+  background-color: #ffffff;
+  border: 1px solid #d5d7da;
+  font-family: "Inter", sans-serif;
+  color: #717680;
+  position: absolute;
+  top: 150px;
+  left: 24px;
+  padding-left: 10px;
+  appearance: none;
+  background: url("../Inventory/chevron-down.svg") no-repeat right 10px center;
+}
+.select-icon {
+  position: absolute;
+  top: 145px;
+  left: 337.5px;
+}
+.label2 {
+  font-weight: 500;
+  font-size: 14px;
+  font-family: "Inter", sans-serif;
+  color: #414651;
+  position: absolute;
+  top: 124px;
+  right: 167.5px;
+}
+.select2 {
+  width: 300.5px;
+  height: 40px;
+  border-radius: 8px;
+  background-color: #ffffff;
+  border: 1px solid #d5d7da;
+  font-family: "Inter", sans-serif;
+  color: #717680;
+  position: absolute;
+  top: 150px;
+  right: 19.5px;
+  padding-left: 10px;
+  gap: 8px;
+  appearance: none;
+  background: url("../Inventory/chevron-down.svg") no-repeat right 10px center;
+}
+.label3 {
+  width: 159px;
+  height: 20px;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  color: #414651;
+  position: absolute;
+  top: 222px;
+  left: 24px;
+}
+.quantity {
+  width: 285.5px;
+  height: 35px;
+  border-radius: 8px;
+  background-color: #ffffff;
+  border: 1px solid #d5d7da;
+  font-family: "Inter", sans-serif;
+  color: #717680;
+  position: absolute;
+  top: 248px;
+  left: 24px;
+  padding-left: 10px;
+}
+.label4 {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  color: #414651;
+  position: absolute;
+  left: 385px;
+  top: 222px;
+}
+.reason {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  color: #414651;
+  position: absolute;
+  background-color: #ffffff;
+  width: 285.5px;
+  height: 35px;
+  border: 1px solid #d5d7da;
+  border-radius: 8px;
+  position: absolute;
+  top: 248px;
+  left: 380px;
+  padding-left: 10px;
+}
+.transfer-bottom {
+  width: 699px;
+  height: 72px;
+  border-top: 1px solid #e9eaeb;
+  position: absolute;
+  top: 344px;
+}
+.avalable {
+  color: #079455;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  position: absolute;
+  top: 20px;
+  left: 24px;
+}
+.cancel {
+  width: 80px;
+  height: 40px;
+  border-radius: 8px;
+  background-color: #ffffff;
+  border: 1px solid #d5d7da;
+  font-family: "Inter", sans-serif;
+  color: #414651;
+  position: absolute;
+  bottom: 16px;
+  right: 179px;
+  cursor: pointer;
+}
+.send-req {
+  width: 151px;
+  height: 40px;
+  border-radius: 8px;
+  background-color: #1570ef;
+  color: #ffffff;
+  font-family: "Inter", sans-serif;
+  border: 2px solid #ffffff1f;
+  background-image: url("../Inventory/send-01.svg");
+  background-repeat: no-repeat;
+  background-position: 10px center;
+  background-size: 20px;
+  position: absolute;
+  cursor: pointer;
+  padding-left: 30px;
+  bottom: 16px;
+  right: 16px;
+}

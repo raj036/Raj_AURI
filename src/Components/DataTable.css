@@ -1,0 +1,59 @@
+.data-table {
+  margin-top: 1rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  background: white;
+  overflow: hidden;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  font-family: "Inter", sans-serif;
+}
+
+.data-table table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed; /* ✅ Keeps all columns aligned */
+}
+
+.data-table thead th {
+  background: #f9fafb;
+  font-weight: 600;
+  color: #374151;
+  padding: 0.9rem 1rem;
+  text-align: left;
+  border-bottom: 1px solid #e5e7eb;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  white-space: nowrap;
+  color: #535862;
+  font-family: "Inter", sans-serif;
+}
+
+.data-table tbody {
+  display: block; /* ✅ scrollable container */
+  max-height: 46vh;
+  overflow-y: auto;
+  width: 100%;
+  font-family: "Inter", sans-serif;
+}
+
+.data-table thead,
+.data-table tbody tr {
+  display: table;
+  width: 100%;
+  table-layout: fixed; /* ✅ ensures alignment */
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+}
+
+.data-table th,
+.data-table td {
+  padding: 0.9rem 1rem;
+  text-align: left; /* ✅ everything left */
+  border-bottom: 1px solid #f3f4f6;
+  font-size: 0.95rem;
+  vertical-align: middle;
+  font-family: "Inter", sans-serif;
+  color: #535862;
+}

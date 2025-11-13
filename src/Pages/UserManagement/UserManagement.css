@@ -1,0 +1,51 @@
+.user-management-card {
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-top: 1rem;
+  background-color: transparent; /* Makes background transparent */
+}
+
+
+
+.custom-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+  color: #374151;
+  table-layout: fixed;
+}
+
+.custom-table thead {
+  position: sticky;
+  top: 0;
+  background-color: #fafafa;
+  z-index: 1;
+}
+
+.custom-table th {
+  text-align: left;
+  font-weight: 600;
+  padding: 0.9rem;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.custom-table td {
+  padding: 0.9rem;
+  border-bottom: 1px solid #e5e7eb;
+  word-wrap: break-word;
+}
+
+
+.actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.icon-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  color: #6b7280;
+}

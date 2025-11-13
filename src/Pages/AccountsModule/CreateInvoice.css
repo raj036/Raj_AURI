@@ -1,0 +1,121 @@
+.actions {
+  display: flex;
+  gap: 16px;
+}
+.purchase-orders-card {
+  padding: 24px 32px;
+  height: 71vh;
+  margin-top: 20px;
+  overflow: hidden; /* prevent outer scroll */
+  font-family: "Inter", sans-serif;
+  display: flex;
+  flex-direction: column;
+  border-radius: 16px;
+  background-color: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  padding: 24px;
+  flex: 1; /* take remaining height */
+  overflow-y: auto; /* scroll inside */
+}
+.purchase-orders-grid {
+  display: flex;
+  gap: 32px;
+  align-items: flex-start;
+}
+.upload-section {
+  flex: 3;
+  max-width: 25%;
+  min-width: 240px;
+}
+
+.product-form-fields {
+  flex: 9;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  max-width: 75%;
+}
+.form-row {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+}
+.form-row .form-field {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.custom-con {
+  margin-top: 30px;
+}
+.custom-field input {
+  width: 132px;
+}
+.cus-row-for {
+  height: 64px;
+}
+.summary-box {
+  margin-top: 1rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  background: white;
+  overflow: hidden;
+  width: 526px;
+  font-family: "Inter", sans-serif;
+  height: 100%;
+  position: relative;
+  left: 71.5%;
+}
+
+.summary-box h3 {
+  font-size: 16px;
+  font-weight: 600;
+  background-color: #fafafa;
+  height: 44px;
+  border-color: #e9eaeb;
+  font-weight: 600;
+  color: #535862;
+  display: flex;
+  align-items: center;
+  padding-left: 3%;
+  font-family: "Inter", sans-serif;
+}
+
+.summary-table {
+  width: 100%;
+  height: auto;
+  border-collapse: collapse;
+  table-layout: fixed; /* ✅ Keeps all columns aligned */
+}
+
+.summary-table td {
+  padding: 0.9rem 1rem;
+  text-align: left; /* ✅ everything left */
+  border-bottom: 1px solid #f3f4f6;
+  font-size: 0.95rem;
+  vertical-align: middle;
+  font-family: "Inter", sans-serif;
+  color: #414651;
+  font-weight: 600;
+}
+
+.summary-table td:first-child {
+  font-weight: 400;
+  color: #535862;
+  font-family: "Inter", sans-serif;
+}
+.summary-table td:last-child {
+  font-weight: 600;
+  color: #414651;
+  font-family: "Inter", sans-serif;
+}
+.summary-table th {
+  background: #f9fafb;
+  font-weight: 400;
+  color: #414651;
+  text-align: left;
+  border-bottom: 1px solid #e5e7eb;
+  white-space: nowrap;
+  font-family: "Inter", sans-serif;
+}

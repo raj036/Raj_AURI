@@ -1,0 +1,27 @@
+.tabs-container {
+  display: flex;
+  border: 1px solid #e9eaeb;
+  margin-top: 10px;
+  padding: 0px 10px;
+  border-radius: 8px;
+  font-family: "Inter", sans-serif;
+}
+
+.tab-item {
+  padding: 10px 16px;
+  cursor: pointer;
+  font-size: 14px;
+  color: #555;
+  border-bottom: 2px solid transparent;
+  transition: all 0.2s ease;
+}
+
+.tab-item:hover {
+  color: #000;
+}
+
+.tab-item.active {
+  color: #1a73e8;
+  font-weight: 500;
+  border-bottom: 2px solid #1a73e8;
+}

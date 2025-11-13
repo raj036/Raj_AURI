@@ -1,0 +1,152 @@
+.upload-card-outer {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Upload box */
+.upload-card-wrapper {
+  width: 100%;
+  height: 170px;
+  background-color: #f9fafb;
+  border: 2px dashed #d1d5db;
+  border-radius: 12px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: border-color 0.2s;
+}
+
+.upload-card-wrapper:hover {
+  border-color: #2563eb;
+}
+
+.upload-card-content {
+  text-align: center;
+  color: #6b7280;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.upload-icon-wrapper {
+  padding: 12px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.upload-icon {
+  width: 32px;
+  height: 32px;
+}
+
+.upload-title {
+  font-weight: 500;
+  font-size: 16px;
+  margin-bottom: 4px;
+  color: #175cd3;
+}
+
+.upload-subtext {
+  font-size: 13px;
+  color: #6b7280;
+}
+
+/* Upload file list */
+.upload-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.upload-item {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 12px;
+  gap: 12px;
+}
+
+.file-icon {
+  font-size: 12px;
+  font-weight: 600;
+  color: white;
+  background-color: #3b82f6;
+  padding: 4px 8px;
+  border-radius: 4px;
+  min-width: 38px;
+  text-align: center;
+}
+
+.file-details {
+  flex: 1;
+}
+
+.file-name {
+  font-weight: 500;
+  color: #111827;
+  font-size: 14px;
+}
+
+.file-meta {
+  font-size: 12px;
+  color: #6b7280;
+  margin-top: 2px;
+}
+
+/* Progress bar */
+.progress-bar {
+  background-color: #e5e7eb;
+  height: 6px;
+  border-radius: 4px;
+  margin-top: 6px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background-color: #3b82f6;
+  width: 0%;
+  transition: width 0.3s ease-in-out;
+}
+
+/* Progress text */
+.file-progress-text {
+  font-size: 14px;
+  font-weight: 500;
+  color: #374151;
+  width: 40px;
+  text-align: right;
+}
+
+/* Trash icon */
+.file-delete {
+  cursor: pointer;
+  margin-left: 8px;
+  color: #9ca3af;
+}
+
+.file-delete svg {
+  width: 16px;
+  height: 16px;
+  fill: #9ca3af;
+}
+
+.file-delete:hover svg {
+  fill: #ef4444;
+}
+.file-delete {
+  cursor: pointer;
+  margin-left: 8px;
+  display: flex;
+  align-items: center;
+  color: #9ca3af;
+  transition: color 0.2s;
+}
+
+.file-delete:hover {
+  color: #ef4444;
+}

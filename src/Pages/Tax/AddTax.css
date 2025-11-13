@@ -1,0 +1,220 @@
+/* Main container */
+.add-product-container {
+  padding: 24px 32px;
+  background-color: #f9fafb;
+  height: 85vh;
+  overflow: hidden; /* prevent outer scroll */
+  font-family: "Inter", sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Card wrapper with internal scroll */
+.product-form-card {
+  background-color: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  padding: 24px;
+  margin-top: 20px;
+  flex: 1; /* take remaining height */
+  overflow-y: auto; /* scroll inside */
+}
+
+/* Scrollbar style */
+.product-form-card::-webkit-scrollbar {
+  width: 8px;
+}
+.product-form-card::-webkit-scrollbar-thumb {
+  background-color: #d1d5db;
+  border-radius: 4px;
+}
+.product-form-card::-webkit-scrollbar-thumb:hover {
+  background-color: #9ca3af;
+}
+
+/* Grid layout */
+.product-form-grid {
+  display: flex;
+  gap: 32px;
+  align-items: flex-start;
+}
+
+.upload-section {
+  flex: 3;
+  max-width: 25%;
+  min-width: 240px;
+}
+
+.product-form-fields {
+  flex: 9;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  max-width: 75%;
+}
+
+/* Upload card */
+.upload-card {
+  width: 100%;
+  height: 240px;
+  border: 1px dashed #d1d5db;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 16px;
+  background-color: #fff;
+  color: #6b7280;
+  font-size: 14px;
+  cursor: pointer;
+  transition: border 0.2s ease;
+}
+.upload-card:hover {
+  border-color: #3b82f6;
+}
+
+/* Row of fields */
+.form-row {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+}
+
+.form-row .form-field {
+  display: flex;
+
+  flex-direction: column;
+}
+
+/* Labels & inputs */
+.form-field label {
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 6px;
+  font-family: "Inter", sans-serif;
+  color: #414651;
+}
+.form-field input,
+.form-field select {
+  padding: 8px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  background-color: #ffffff;
+  font-size: 14px;
+  color: #717680;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  transition: border 0.2s ease;
+}
+.form-field input:focus,
+.form-field select:focus {
+  border-color: #3b82f6;
+  outline: none;
+}
+
+/* Required indicator */
+.form-field label::after {
+  content: attr(data-required);
+  color: #ef4444;
+  margin-left: 4px;
+  font-weight: bold;
+}
+
+/* Price input */
+.price-input {
+  display: flex;
+  align-items: center;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #fff;
+}
+.price-input select {
+  border: none;
+  padding: 10px 12px;
+  background-color: #f9fafb;
+  font-size: 14px;
+  color: #111827;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+}
+.price-input input {
+  flex: 1;
+  padding: 10px 12px;
+  border: none;
+  font-size: 14px;
+  color: #111827;
+}
+
+/* Date input */
+input[type="date"] {
+  font-family: inherit;
+}
+
+/* Checkbox style */
+.checkbox-row {
+  margin-top: -12px;
+  padding-left: 2px;
+  font-size: 14px;
+  color: #374151;
+}
+
+/* Buttons row */
+.form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+/* Primary button */
+.button-primary {
+  padding: 10px 24px;
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+.button-primary:hover {
+  background-color: #1d4ed8;
+}
+
+/* Secondary button */
+.button-secondary {
+  padding: 10px 24px;
+  background-color: #f3f4f6;
+  color: #374151;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+.button-secondary:hover {
+  background-color: #e5e7eb;
+}
+.upload-section p {
+  color: #181d27;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+  .product-form-grid {
+    flex-direction: column;
+  }
+  .upload-section,
+  .product-form-fields {
+    max-width: 100%;
+  }
+  .form-row {
+    flex-direction: column;
+  }
+}

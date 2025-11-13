@@ -1,0 +1,73 @@
+import React from "react";
+import "./StatusBadge.css";
+
+const StatusBadge = ({ status }) => {
+  const normalizedStatus = status?.toLowerCase();
+
+  const statusClass =
+    normalizedStatus === "active"
+      ? "active"
+      : normalizedStatus === "inactive"
+      ? "inactive"
+      : normalizedStatus === "draft"
+      ? "draft"
+      : normalizedStatus === "discontinue"
+      ? "discontinue"
+      : normalizedStatus === "packed"
+      ? "packed"
+      : normalizedStatus === "dispatched"
+      ? "dispatched"
+      : normalizedStatus === "returned"
+      ? "returned"
+      : normalizedStatus === "rejected"
+      ? "rejected"
+      : normalizedStatus === "approved"
+      ? "approved"
+      : normalizedStatus === "pending"
+      ? "pending"
+      : normalizedStatus === "issued"
+      ? "issued"
+      : normalizedStatus === "assigned"
+      ? "assigned"
+      : normalizedStatus === "completed"
+      ? "completed"
+      : normalizedStatus === "Inprogress"
+      ? "inprogress"
+      : normalizedStatus === "present"
+      ? "present"
+      : normalizedStatus === "leave"
+      ? "leave"
+      : normalizedStatus === "half day"
+      ? "halfday"
+      : normalizedStatus === "absent"
+      ? "absent"
+      : normalizedStatus === "applied"
+      ? "applied"
+      : normalizedStatus === "open"
+      ? "open"
+      : normalizedStatus === "refunded"
+      ? "refunded"
+      : normalizedStatus === "open"
+      ? "open"
+      : normalizedStatus === "partially paid"
+      ? "partiallypaid"
+      : normalizedStatus === "unpaid"
+      ? "unpaid"
+      : normalizedStatus === "paid"
+      ? "paid"
+      : normalizedStatus === "packed"
+      ? "packed"
+      : normalizedStatus === "online"
+      ? "online"
+      : normalizedStatus === "offline"
+      ? "offline"
+      : normalizedStatus === "resolved"
+      ? "resolved"
+      : normalizedStatus === "In progress"
+      ? "In progress"
+      : "";
+
+  return <span className={`status-badge ${statusClass}`}>{status}</span>;
+};
+
+export default StatusBadge;

@@ -1,0 +1,24 @@
+.form-field label {
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 6px;
+  font-family: "Inter", sans-serif;
+  color: #414651;
+}
+.form-field input,
+.form-field select {
+  padding: 8px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  background-color: #ffffff;
+  font-size: 14px;
+  color: #717680;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  transition: border 0.2s ease;
+}
+.form-field input:focus,
+.form-field select:focus {
+  border-color: #3b82f6;
+  outline: none;
+}

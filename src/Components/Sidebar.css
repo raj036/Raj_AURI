@@ -1,0 +1,120 @@
+.sidebar-container {
+  width: 320px;
+  background-color: #f9fafc;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 40px 32px;
+  border-right: 1px solid #e5e7eb;
+  box-sizing: border-box;
+}
+
+/* Logo */
+.sidebar-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-img {
+  height: 36px;
+  width: 36px;
+  object-fit: contain;
+}
+
+.logo-text {
+  font-size: 20px;
+  font-weight: 600;
+  color: #1a4dd8;
+}
+
+/* Steps Section */
+.sidebar-steps {
+  flex: 1;
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.sidebar-step {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+}
+
+.icon-box {
+  width: 42px;
+  height: 42px;
+  background-color: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-box img {
+  width: 20px;
+  height: 20px;
+}
+
+.step-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.step-title {
+  font-weight: 600;
+  font-size: 16px;
+  color: #111827;
+  margin: 0;
+}
+
+.step-subtitle {
+  font-size: 14px;
+  color: #6b7280;
+  margin: 2px 0 0;
+}
+
+/* Connector Line */
+.sidebar-line {
+  height: 40px;
+  width: 1.5px;
+  background-color: #e5e7eb;
+  margin: 12px 0 12px 20px;
+}
+
+/* Footer */
+.sidebar-footer {
+  display: flex;
+  align-items: center;
+  gap: 8px; /* space between icon and text */
+  padding: 16px 24px;
+  margin-top: auto;
+  color: #6b7280; /* subtle grey text */
+  font-size: 14px;
+}
+
+.mail-icon {
+  width: 36;
+  height: 36px;
+  flex-shrink: 0;
+}
+
+.footer-email {
+  white-space: nowrap;
+  color: #6b7280;
+}
+/* Ensure no underline on the links in the sidebar */
+.sidebar-link {
+  text-decoration: none; /* Removes underline */
+  color: inherit; /* Ensures that the color of the link inherits from its parent */
+}
+
+/* Optional: Style the hover state for better UX */
+.sidebar-link:hover {
+  color: #007bff; /* Change this to your preferred hover color */
+}
+

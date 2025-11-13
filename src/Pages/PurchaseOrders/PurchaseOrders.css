@@ -1,0 +1,54 @@
+.actions {
+  display: flex;
+  gap: 16px;
+}
+.purchase-orders-card {
+  padding: 24px 32px;
+  height: 71vh;
+  margin-top: 20px;
+  overflow: hidden; /* prevent outer scroll */
+  font-family: "Inter", sans-serif;
+  display: flex;
+  flex-direction: column;
+  border-radius: 16px;
+  background-color: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  padding: 24px;
+  flex: 1; /* take remaining height */
+  overflow-y: auto; /* scroll inside */
+}
+.purchase-orders-grid {
+  display: flex;
+  gap: 32px;
+  align-items: flex-start;
+}
+.upload-section {
+  flex: 3;
+  max-width: 25%;
+  min-width: 240px;
+}
+
+.product-form-fields {
+  flex: 9;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  max-width: 75%;
+}
+.form-row {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+}
+.form-row .form-field {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.custom-con {
+  margin-top: 30px;
+}
+.cus-for {
+  margin-right: 210px !important;
+}

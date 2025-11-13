@@ -1,0 +1,113 @@
+.add-package-container {
+  padding: 24px 32px;
+  background-color: #fff;
+  height: 41vh;
+  margin-top: 20px;
+  overflow: hidden; /* prevent outer scroll */
+  font-family: "Inter", sans-serif;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid hsl(220, 13%, 91%);
+  border-radius: 16px;
+}
+.add-package-feild {
+  display: flex;
+  max-width: 75%;
+  position: relative;
+  left: 25%;
+}
+.add-package-feild input,
+select {
+  width: 360px;
+  height: 40px;
+  color: #717680;
+}
+
+.add-package-row1 {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+.add-package-span {
+  display: block;
+  position: absolute;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  color: #181d27;
+}
+.add-package-row2 {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  position: absolute;
+  top: 100%;
+}
+.add-package-row2 select {
+  color: #717680;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+}
+.add-package-container select {
+  width: 360px;
+  height: auto;
+  color: #717680;
+  font-family: "Inter", sans-serif;
+}
+.add-package-row3 select {
+  width: 0px;
+  border: none !important;
+  outline: none !important;
+  position: relative;
+  left: 268px;
+  top: -39px;
+  color: #717680;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  padding-left: 60px !important;
+  border-color: #ffffff !important;
+}
+.add-package-input {
+  width: 360px;
+  height: 40px;
+  border-radius: 8px;
+  color: #717680;
+  font-family: "Inter", sans-serif;
+  border: 1px solid #d5d7da;
+}
+.add-package-container label {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  color: #717680;
+}
+.add-package-row3 {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  top: 195%;
+}
+.add-package-row4 select {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.05);
+  position: relative;
+  top: -38px;
+  width: 75px;
+  left: 270px;
+  border-style: none !important;
+  border-color: #ffffff !important;
+  border: none !important;
+  outline: none !important;
+}
+.add-package-row4 option {
+  width: 0px;
+  color: #717680;
+  font-family: "Inter", sans-serif;
+}
+.add-package-row4 {
+  display: flex;
+  position: absolute;
+  top: 290%;
+  gap: 30px;
+  flex-direction: row;
+}

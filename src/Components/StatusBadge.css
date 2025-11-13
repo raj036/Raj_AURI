@@ -1,0 +1,105 @@
+.status-badge {
+  display: inline-flex;
+  align-items: center;
+  font-size: 0.85rem;
+  font-weight: 500;
+  padding: 0.25rem 0.6rem;
+  border-radius: 6px;
+  border: 1px solid #d1d5db;
+  text-transform: capitalize;
+  gap: 6px;
+  font-family: "Inter", sans-serif;
+}
+
+.status-badge::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+/* Existing statuses */
+.status-badge.active::before {
+  background-color: #22c55e;
+}
+.status-badge.inactive::before {
+  background-color: #f04438;
+}
+.status-badge.returned::before {
+  background-color: #f04438;
+}
+.status-badge.draft::before {
+  background-color: #4e5ba6;
+}
+.status-badge.discontinue::before {
+  background-color: #f04438;
+}
+.status-badge.packed::before {
+  background-color: #22c55e;
+}
+.status-badge.dispatched::before {
+  background-color: #3b82f6;
+}
+.status-badge.rejected::before {
+  background-color: #b91c1c;
+}
+.status-badge.approved::before {
+  background-color: #0d9488;
+}
+.status-badge.pending::before {
+  background-color: #f59e0b;
+}
+.status-badge.issued::before {
+  background-color: #6366f1;
+}
+
+/* New statuses */
+.status-badge.assigned::before {
+  background-color: #8b5cf6;
+} /* Violet */
+.status-badge.completed::before {
+  background-color: #16a34a;
+} /* Green */
+.status-badge.inprogress::before {
+  background-color: #0ea5e9;
+} /* Sky Blue */
+.status-badge.present::before {
+  background-color: #17b26a;
+}
+.status-badge.leave::before {
+  background-color: #f04438;
+}
+.status-badge.halfday::before {
+  background-color: #4e5ba6;
+}
+.status-badge.absent::before {
+  background-color: #dc6803;
+}
+.status-badge.applied::before {
+  background-color: #17b26a;
+}
+.status-badge.open::before {
+  background-color: #f04438;
+}
+.status-badge.refunded::before {
+  background-color: #1570ef;
+}
+.status-badge.partiallypaid::before {
+  background-color: #17b26a;
+}
+.status-badge.unpaid::before {
+  background-color: #f04438;
+}
+.status-badge.paid::before {
+  background-color: #1570ef;
+}
+.status-badge.packed::before {
+  background-color: #17b26a;
+}
+.status-badge.online::before {
+  background-color: #17b26a;
+}
+.status-badge.offline::before {
+  background-color: #f04438;
+}

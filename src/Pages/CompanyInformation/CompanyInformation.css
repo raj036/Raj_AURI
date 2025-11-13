@@ -1,0 +1,67 @@
+.company-info-content {
+  padding: 60px 80px;
+  background-color: #fff;
+  width: 100%; /* Ensure content takes full width of parent */
+  display: flex;
+    min-height: 94vh; 
+  flex-direction: column;
+}
+
+.product-form-card {
+  min-width: 69vw; /* Ensure the card takes full width of the column */
+  background: #ffffff;
+
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 32px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  box-sizing: border-box; /* Include padding in width calculation */
+  margin: 0; /* Remove margins that may constrain the width */
+}
+
+.company-info-content h2 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #111827;
+  margin-bottom: 10px;
+}
+
+.company-info-content p {
+  color: #6b7280;
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+.product-form-fields {
+  width: 100%;
+}
+
+.form-row {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 24px;
+}
+
+.form-row > * {
+  flex: 1; /* Ensure inputs take equal width */
+}
+.save-button-container {
+  display: flex;
+  justify-content: flex-end; /* Align the button to the right */
+  margin-top: 24px;
+}
+
+.save-button {
+  background-color: #1570EF; /* Green background */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+   width: 360px;
+}
+
+.save-button:hover {
+  background-color: #1570EF; /* Darker green on hover */
+}

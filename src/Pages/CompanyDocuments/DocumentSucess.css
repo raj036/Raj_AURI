@@ -1,0 +1,43 @@
+.document-success-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  width: 70vw;
+  background-color: #ffffff;
+}
+
+.document-success-card {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  padding: 60px 80px;
+  width: 600px;
+}
+
+.success-icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.success-icon {
+  color: #4ade80; /* Light green like Figma */
+  font-size: 100px !important;
+}
+
+.document-success-card h2 {
+  font-size: 22px;
+  font-weight: 600;
+  color: #111827;
+  margin-bottom: 12px;
+}
+
+.document-success-card p {
+  color: #6b7280;
+  font-size: 16px;
+  line-height: 1.5;
+}

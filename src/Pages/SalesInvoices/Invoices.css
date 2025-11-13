@@ -1,0 +1,205 @@
+.invoice-container {
+  font-family: 'Inter', sans-serif;
+  background: #fff;
+  max-width: 900px;
+  margin: 30px auto;
+  border: 1px solid #e5e5e5;
+  border-radius: 8px;
+  padding: 40px 50px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  color: #222;
+  overflow-y: auto;
+  height: 95vh; /* ensures scrolling for long invoices */
+}
+
+/* ---------- HEADER WITH LOGO & TITLE ---------- */
+.invoice-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.invoice-logo img {
+  width: 60px;
+  height: 60px;
+  border-radius: 12px;
+}
+
+.invoice-title {
+  font-size: 22px;
+  font-weight: 600;
+  color: #000;
+}
+
+/* ---------- HEADER DETAILS ---------- */
+.invoice-header {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  border-bottom: 1px solid #e5e5e5;
+  padding-bottom: 15px;
+  margin-bottom: 25px;
+}
+
+.invoice-header > div {
+  width: 30%;
+  min-width: 250px;
+}
+
+.invoice-header h2 {
+  font-size: 15px;
+  font-weight: 600;
+  color: #000;
+  margin-bottom: 6px;
+}
+
+.invoice-header p {
+  font-size: 13px;
+  color: #333;
+  line-height: 1.5;
+}
+
+/* ---------- PRODUCT TABLE ---------- */
+.product-table {
+  margin-bottom: 30px;
+}
+
+.product-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.product-table th {
+  font-size: 13px;
+  font-weight: 600;
+  background-color: #fafafa;
+  text-align: left;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.product-table td {
+  font-size: 13px;
+  padding: 8px 10px;
+  border-bottom: 1px solid #eee;
+  color: #333;
+}
+
+.product-table td:first-child {
+  font-weight: 500;
+  color: #000;
+}
+
+/* ---------- ORDER SUMMARY ---------- */
+.order-summary {
+  width: 100%;
+  max-width: 350px;
+  margin-left: auto;
+  font-size: 13px;
+}
+
+.order-summary h2 {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.summary-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 3px 0;
+}
+
+.summary-item.total {
+  border-top: 2px solid #000;
+  margin-top: 10px;
+  padding-top: 6px;
+  font-weight: 700;
+}
+
+/* ---------- PAYMENT INFO ---------- */
+.payment-info {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  border-top: 1px solid #e5e5e5;
+  margin-top: 40px;
+  padding-top: 20px;
+}
+
+.payment-info div {
+  width: 45%;
+  min-width: 260px;
+}
+
+.payment-info h2 {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.payment-info p {
+  font-size: 13px;
+  color: #333;
+}
+
+/* ---------- SIGNATURE ---------- */
+.signature {
+  margin-top: 40px;
+  text-align: left;
+}
+
+.signature p {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.signature h3 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 24px;
+  color: #000;
+}
+
+/* ---------- FOOTER ---------- */
+.footer-note {
+  background-color: #fafafa;
+  border-top: 1px solid #e5e5e5;
+  padding: 15px;
+  font-size: 12px;
+  color: #555;
+  text-align: left;
+  border-radius: 0 0 8px 8px;
+  margin-top: 30px;
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 768px) {
+  .invoice-container {
+    padding: 20px;
+    height: auto;
+  }
+
+  .invoice-top {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .invoice-header {
+    flex-direction: column;
+  }
+
+  .invoice-header > div {
+    width: 100%;
+  }
+
+  .payment-info {
+    flex-direction: column;
+  }
+
+  .order-summary {
+    max-width: 100%;
+  }
+}

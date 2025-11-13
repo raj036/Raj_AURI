@@ -1,0 +1,200 @@
+/* Overlay */
+.dialog-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.45);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1500;
+}
+
+/* Container */
+.dialog-container {
+  background: #ffffff;
+  border-radius: 12px;
+  width: 780px;
+  max-width: 95%;
+  padding: 32px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+  animation: fadeIn 0.25s ease-in-out;
+  font-family: "Inter", system-ui, sans-serif;
+  color: #1a1a1a;
+}
+
+/* Header */
+.dialog-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-bottom: 1px solid #e5e7eb;
+  padding-bottom: 20px;
+}
+
+.dialog-header h2 {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 600;
+  color: #111827;
+}
+
+/* Close button */
+.close-btn {
+  border: none;
+  background: none;
+  font-size: 22px;
+  cursor: pointer;
+  color: #6b7280;
+  transition: 0.2s ease;
+}
+
+.close-btn:hover {
+  color: #111827;
+}
+
+/* Meta Section */
+.dialog-meta {
+  display: flex;
+  gap: 50px;
+  margin-top: 12px;
+}
+
+.dialog-meta p {
+  margin: 0;
+  font-size: 13px;
+  color: #6b7280;
+}
+
+.dialog-meta strong {
+  display: block;
+  margin-top: 4px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #111827;
+}
+
+/* Status badge */
+.status-badge {
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.status-badge.active {
+  background: #eaf3ff;
+  color: #1e88e5;
+}
+
+.status-badge.inactive {
+  background: #fdecea;
+  color: #d32f2f;
+}
+
+.status-badge.expired {
+  background: #fff8e1;
+  color: #b7791f;
+}
+
+/* History Table */
+.dialog-section {
+  margin-top: 28px;
+}
+
+.dialog-section h3 {
+  font-size: 15px;
+  font-weight: 600;
+  color: #111827;
+  margin-bottom: 12px;
+}
+
+.history-table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #fafafa;
+}
+
+.history-table th {
+  background: #f9fafb;
+  font-weight: 500;
+  font-size: 13px;
+  color: #6b7280;
+  text-align: left;
+  padding: 12px 16px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.history-table td {
+  font-size: 14px;
+  color: #111827;
+  padding: 14px 16px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.history-table tr:last-child td {
+  border-bottom: none;
+}
+
+/* Summary Section */
+.summary-section {
+  border-top: 1px solid #e5e7eb;
+  margin-top: 30px;
+  padding-top: 18px;
+}
+
+.summary-section h3 {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 16px;
+  color: #111827;
+}
+
+.summary-cards {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.summary-card {
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 20px;
+  flex: 1;
+  text-align: center;
+  min-width: 180px;
+}
+
+.summary-card p {
+  margin: 0;
+  color: #6b7280;
+  font-size: 13px;
+}
+
+.summary-card h4 {
+  margin-top: 6px;
+  color: #111827;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

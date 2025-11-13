@@ -1,0 +1,240 @@
+/* Sidebar Base */
+.sidebar {
+  position: relative;
+  width: 72px;
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 20px;
+  margin: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem 0;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  transition: width 0.3s ease;
+  overflow: hidden;
+}
+
+.sidebar:hover {
+  width: 240px;
+  /* overflow: visible; */
+}
+
+/* Logo Section */
+.icon-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0 16px;
+  min-height: 48px;
+}
+
+
+.logo {
+  width: 50px;
+  height: 50px;
+  flex-shrink: 0;
+}
+
+.logo-label {
+  font-weight: 600;
+  font-size: 18px;
+  white-space: nowrap;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  overflow: hidden;
+}
+
+.sidebar:hover .logo-label {
+  opacity: 1;
+}
+
+/* Menu */
+.sidebar-menu {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.menu-item-wrapper {
+  position: relative;
+}
+
+.menu-item {
+  background: none;
+  border: none;
+  color: #4b5563;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 15px;
+  cursor: pointer;
+  padding: 6px 12px;
+  border-radius: 12px;
+  position: relative;
+  transition: color 0.2s, background 0.2s;
+  
+  /* 🔹 Stretch menu item to full width */
+  width: 100%;
+  box-sizing: border-box;
+}
+
+
+/* Icon wrapper */
+.menu-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s, color 0.2s;
+  flex-shrink: 0;
+  font-size: 22px;
+}
+
+/* --- ACTIVE / HOVER STATES --- */
+
+/* Collapsed state → circle highlight only */
+.sidebar:not(:hover) .menu-item.active .menu-icon,
+.sidebar:not(:hover) .menu-item:hover .menu-icon {
+  background: #f3f4f6;
+  color: #2563eb;
+  width: 100%;  
+}
+
+/* Expanded state → full row highlight */
+/* Expanded state → full row highlight */
+.sidebar:hover .menu-item.active,
+.sidebar:hover .menu-item:hover {
+  background: #f3f4f6;
+  color: #2563eb;
+  border-radius: 12px; /* keep pill highlight */
+  width: 100%;         /* ensures uniform width */
+}
+
+
+.sidebar:hover .menu-item.active .menu-icon,
+.sidebar:hover .menu-item:hover .menu-icon {
+  background: transparent; /* remove double highlight */
+}
+
+/* Label hidden until expanded */
+.sidebar-label {
+  opacity: 0;
+  white-space: nowrap;
+  transition: opacity 0.3s ease;
+}
+
+.sidebar:hover .sidebar-label {
+  opacity: 1;
+}
+
+/* Badge */
+.badge {
+
+  color: #111827;
+  font-size: 12px;
+  font-weight: 500;
+  border-radius: 12px;
+  padding: 2px 8px;
+  margin-left: auto;
+}
+
+/* Submenu (full-height flyout) */
+.submenu {
+  position: fixed;
+  top: 0;
+  left: 240px;   /* sits next to expanded sidebar */
+  width: 220px;
+  height: 98vh;
+  margin-top: 10px;
+  background: #ffffff;
+  border-left: 1px solid #e5e7eb;
+  box-shadow: 2px 0 8px rgba(0,0,0,0.08);
+  padding: 6px 0;
+  display: flex;
+  flex-direction: column;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateX(8px);
+  transition: opacity 0.2s ease, transform 0.2s ease;
+  z-index: 1500;
+  overflow-y: auto;
+}
+
+/* Show submenu */
+.menu-item-wrapper.has-submenu:hover .submenu {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateX(0);
+}
+
+/* Submenu items */
+.submenu-item {
+  background: transparent;
+  border: none;
+  width: 100%;
+  text-align: left;
+  padding: 10px 16px;
+  font-size: 15px;
+  color: #374151;
+  cursor: pointer;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  transition: background 0.2s, color 0.2s;
+}
+
+.submenu-item:hover {
+  background: #f3f4f6;
+  color: #2563eb;
+}
+
+/* Footer */
+.sidebar-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: auto;
+  padding: 0 0.5rem;
+}
+
+/* Profile Card */
+.profile-card {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+  transition: all 0.3s ease;
+}
+
+.profile-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.profile-info {
+  display: none;
+}
+
+.sidebar:hover .profile-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-name {
+  font-weight: 600;
+  font-size: 14px;
+  color: #111827;
+}
+
+.profile-email {
+  font-size: 12px;
+  color: #6b7280;
+}

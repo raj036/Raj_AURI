@@ -1,0 +1,138 @@
+.document-rejected-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: #ffffff;
+  min-height: 100vh;
+  padding: 80px 0;
+    width: 70vw;
+}
+
+.document-rejected-card {
+  width: 70vw;
+  max-width: 1000px;
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 32px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.rejected-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.rejected-header h2 {
+  font-size: 22px;
+  font-weight: 600;
+  color: #dc2626;
+}
+
+.rejected-header p {
+  color: #6b7280;
+  font-size: 16px;
+}
+
+.rejected-icon {
+  width: 32px;
+  height: 32px;
+}
+
+.rejected-file {
+  display: flex;
+  align-items: center;
+  background: #f9fafb;
+  border-radius: 8px;
+  padding: 14px 20px;
+  margin-bottom: 12px;
+}
+
+.pdf-icon {
+  width: 28px;
+  height: 28px;
+  margin-right: 12px;
+}
+
+.file-info .file-name {
+  font-weight: 500;
+  color: #111827;
+  margin: 0;
+}
+
+.file-info span {
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.rejection-reason {
+  background-color: #fff1f2;
+  border: 1px solid #ef4444;
+  color: #dc2626;
+  border-radius: 8px;
+  padding: 16px;
+  margin-top: 24px;
+  font-size: 15px;
+}
+
+.rejection-reason strong {
+  display: block;
+  margin-bottom: 8px;
+  color: #b91c1c;
+}
+
+.upload-tips {
+  background-color: #f9fafb;
+  border-radius: 8px;
+  padding: 16px;
+  margin-top: 24px;
+}
+
+.upload-tips ul {
+  margin: 8px 0 0 18px;
+}
+
+.upload-tips li {
+  margin-bottom: 6px;
+  color: #374151;
+}
+
+.reupload-btn-container {
+  margin-top: 28px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.reupload-btn {
+  background-color: #1570EF;
+  color: #fff;
+  font-size: 15px;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  font-weight: 500;
+}
+.rejected-icon {
+  color: #dc2626;
+  font-size: 36px !important;
+}
+
+.pdf-icon {
+  color: #374151;
+  font-size: 28px !important;
+  margin-right: 12px;
+}
+
+.reupload-btn svg {
+  font-size: 22px;
+}
+
+.reupload-btn:hover {
+  background-color: #1d4ed8;
+}
