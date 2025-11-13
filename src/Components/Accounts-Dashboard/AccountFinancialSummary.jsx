@@ -49,34 +49,29 @@ function ForcastDashboard({
   initialSelected = [],
 }) {
   const [selectedDate, setSelectedDate] = useState("Today");
-  const [selectedBranches, setSelectedBranches] = useState([
-    "HSR",
-    "Kormangala",
-  ]);
+  const { dateTabs, accountFinancialMetrics } = data;
 
-  const { dateTabs, forcastChartData, accountFinancialMetrics } = data;
+  // const verticalLinePlugin = {
+  //   id: "verticalLine",
+  //   afterDatasetsDraw: (chart) => {
+  //     if (chart.tooltip?._active && chart.tooltip._active.length > 0) {
+  //       const ctx = chart.ctx;
+  //       const activePoint = chart.tooltip._active[0].element;
+  //       const x = activePoint.x;
+  //       const topY = chart.scales.y.top;
+  //       const bottomY = chart.scales.y.bottom;
 
-  const verticalLinePlugin = {
-    id: "verticalLine",
-    afterDatasetsDraw: (chart) => {
-      if (chart.tooltip?._active && chart.tooltip._active.length > 0) {
-        const ctx = chart.ctx;
-        const activePoint = chart.tooltip._active[0].element;
-        const x = activePoint.x;
-        const topY = chart.scales.y.top;
-        const bottomY = chart.scales.y.bottom;
-
-        ctx.save();
-        ctx.beginPath();
-        ctx.moveTo(x, topY);
-        ctx.lineTo(x, bottomY);
-        ctx.lineWidth = 1.5;
-        ctx.strokeStyle = "#2563eb";
-        ctx.stroke();
-        ctx.restore();
-      }
-    },
-  };
+  //       ctx.save();
+  //       ctx.beginPath();
+  //       ctx.moveTo(x, topY);
+  //       ctx.lineTo(x, bottomY);
+  //       ctx.lineWidth = 1.5;
+  //       ctx.strokeStyle = "#2563eb";
+  //       ctx.stroke();
+  //       ctx.restore();
+  //     }
+  //   },
+  // };
 
   const defaultBranches = [
     "HSR",

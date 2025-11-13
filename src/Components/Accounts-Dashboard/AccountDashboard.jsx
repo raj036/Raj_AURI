@@ -1,5 +1,4 @@
 import React from "react";
-import ActionCard from "../Company-Dashboard/ActionCard";
 import SalesTaskCard from "../Sales-Dashboard/SalesTaskCard";
 import Layout from "../Layout/Layout";
 import SalesOverview from "../Sales-Dashboard/SalesOverview"

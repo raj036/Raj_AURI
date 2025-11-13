@@ -49,10 +49,6 @@ function BranchForecast({
   initialSelected = [],
 }) {
   const [selectedDate, setSelectedDate] = useState("Today");
-  const [selectedBranches, setSelectedBranches] = useState([
-    "HSR",
-    "Kormangala",
-  ]);
 
   const { dateTabs, forcastChartData, branchForecastMetrics } = data;
 
@@ -165,18 +161,18 @@ function BranchForecast({
     };
   });
 
-  const finalDatasets = datasets.length
-    ? datasets
-    : [
-        {
-          label: "No branches selected",
-          data: months.map(() => 0),
-          borderColor: "#E5E7EB",
-          backgroundColor: "#E5E7EB",
-          pointRadius: 0,
-          tension: 0.25,
-        },
-      ];
+  // const finalDatasets = datasets.length
+  //   ? datasets
+  //   : [
+  //       {
+  //         label: "No branches selected",
+  //         data: months.map(() => 0),
+  //         borderColor: "#E5E7EB",
+  //         backgroundColor: "#E5E7EB",
+  //         pointRadius: 0,
+  //         tension: 0.25,
+  //       },
+  //     ];
 
   const chartData1 = {
     labels: [

@@ -338,7 +338,6 @@ function BranchInventoryDashboard({
   branchData: branchDataProp,
   initialSelected = [],
 }) {
-  const [selectedDate, setSelectedDate] = useState("Today");
 
   // 🔹 Default data fallback
   const defaultBranches = [

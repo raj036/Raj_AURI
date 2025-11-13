@@ -1,8 +1,7 @@
 import React from "react";
 import data from "../../data/dashboardData.json";
-import { Line, Bar } from "react-chartjs-2";
+import { Bar } from "react-chartjs-2";
 import { useState, useMemo } from "react";
-import Select, { components } from "react-select";
 import BranchFilter from "../Branch-Dashboard/BranchFilter";
 
 const Card = ({ title, value, subText, icon, growth, isCurrency = false }) => (
@@ -51,34 +50,30 @@ function ForcastDashboard({
 }) {
   const accountReceivables = data?.customerInsights || [];
   const [selectedDate, setSelectedDate] = useState("Today");
-  const [selectedBranches, setSelectedBranches] = useState([
-    "HSR",
-    "Kormangala",
-  ]);
 
-  const { high, dateTabs, forcastChartData, accountFinancialMetrics } = data;
+  const { high, dateTabs, } = data;
 
-  const verticalLinePlugin = {
-    id: "verticalLine",
-    afterDatasetsDraw: (chart) => {
-      if (chart.tooltip?._active && chart.tooltip._active.length > 0) {
-        const ctx = chart.ctx;
-        const activePoint = chart.tooltip._active[0].element;
-        const x = activePoint.x;
-        const topY = chart.scales.y.top;
-        const bottomY = chart.scales.y.bottom;
+  // const verticalLinePlugin = {
+  //   id: "verticalLine",
+  //   afterDatasetsDraw: (chart) => {
+  //     if (chart.tooltip?._active && chart.tooltip._active.length > 0) {
+  //       const ctx = chart.ctx;
+  //       const activePoint = chart.tooltip._active[0].element;
+  //       const x = activePoint.x;
+  //       const topY = chart.scales.y.top;
+  //       const bottomY = chart.scales.y.bottom;
 
-        ctx.save();
-        ctx.beginPath();
-        ctx.moveTo(x, topY);
-        ctx.lineTo(x, bottomY);
-        ctx.lineWidth = 1.5;
-        ctx.strokeStyle = "#2563eb";
-        ctx.stroke();
-        ctx.restore();
-      }
-    },
-  };
+  //       ctx.save();
+  //       ctx.beginPath();
+  //       ctx.moveTo(x, topY);
+  //       ctx.lineTo(x, bottomY);
+  //       ctx.lineWidth = 1.5;
+  //       ctx.strokeStyle = "#2563eb";
+  //       ctx.stroke();
+  //       ctx.restore();
+  //     }
+  //   },
+  // };
 
   const defaultBranches = [
     "HSR",
@@ -160,34 +155,34 @@ function ForcastDashboard({
     };
   });
 
-  const finalDatasets = datasets.length
-    ? datasets
-    : [
-        {
-          label: "No branches selected",
-          data: months.map(() => 0),
-          borderColor: "#E5E7EB",
-          backgroundColor: "#E5E7EB",
-          pointRadius: 0,
-          tension: 0.25,
-        },
-      ];
+  // const finalDatasets = datasets.length
+  //   ? datasets
+  //   : [
+  //       {
+  //         label: "No branches selected",
+  //         data: months.map(() => 0),
+  //         borderColor: "#E5E7EB",
+  //         backgroundColor: "#E5E7EB",
+  //         pointRadius: 0,
+  //         tension: 0.25,
+  //       },
+  //     ];
 
   const handleBranchSelect1 = (selected) => setSelectedOptions(selected || []);
 
-  const Option = (props) => {
-    return (
-      <components.Option {...props}>
-        <input
-          type="checkbox"
-          checked={props.isSelected}
-          onChange={() => null}
-          style={{ marginRight: 8 }}
-        />
-        <label>{props.label}</label>
-      </components.Option>
-    );
-  };
+  // const Option = (props) => {
+  //   return (
+  //     <components.Option {...props}>
+  //       <input
+  //         type="checkbox"
+  //         checked={props.isSelected}
+  //         onChange={() => null}
+  //         style={{ marginRight: 8 }}
+  //       />
+  //       <label>{props.label}</label>
+  //     </components.Option>
+  //   );
+  // };
 
   const topCustomersData = [
     { name: "0-30", orders: 55, revenue: 1500000 },

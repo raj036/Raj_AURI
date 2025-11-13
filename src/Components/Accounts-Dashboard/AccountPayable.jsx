@@ -3,15 +3,6 @@ import data from "../../data/dashboardData.json"; // adjust path
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Line } from "react-chartjs-2";
 import { useState, useMemo } from "react";
-import {
-  faArrowLeft,
-  faArrowRight,
-  faFileLines,
-  faClipboard,
-  faMessage,
-  faCalendar,
-} from "@fortawesome/free-regular-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 // Priority Badge Component
 const PriorityBadge = ({ level }) => {
