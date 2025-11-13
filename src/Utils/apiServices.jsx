@@ -1,7 +1,6 @@
 // src/utils/apiService.js
 import axios from "axios";
 
-// Make sure base URL is correctly set from .env (no trailing slashes)
 const API_BASE_URL = process.env.REACT_APP_API_BASE_URL?.replace(/\/+$/, "");
 
 const axiosInstance = axios.create({
@@ -230,5 +229,185 @@ export const updateQuotation = (id, quotationData) =>
 
 export const deleteQuotation = (id) =>
   axiosInstance.delete(`/api/quotations/${id}`);
+
+
+
+// aayush code 
+
+export const addCustomers = async (customersData) => {
+  try {
+    const response = await axiosInstance.post("api/v1/customers/addOrUpdate", customersData);
+    console.log("✅ Customers added:", response.data);
+    return response.data;
+  } catch (error) {
+    console.error("❌ Error adding customers:", error.response?.data || error);
+    throw error.response?.data || error;
+  }
+};
+
+// ✅ Update existing shipment (same endpoint but POST with shipmentId)
+export const updateCustomers = async (customerId, updatedData) => {
+  try {
+    const payload = { customerId, ...updatedData }; // backend expects shipmentId in body
+    const response = await axiosInstance.post("api/v1/customers/addOrUpdate", payload);
+    console.log("✅ Customers updated:", response.data);
+    return response.data;
+  } catch (error) {
+    console.error("❌ Error updating customers:", error.response?.data || error);
+    throw error.response?.data || error;
+  }
+};
+
+// ✅ Fetch all customers or a specific customer
+export const fetchCustomers = async (customerId = null) => {
+  try {
+    const endpoint = customerId 
+      ? `/api/v1/customers/${customerId}` 
+      : "/api/v1/customers";
+    const response = await axiosInstance.get(endpoint);
+    console.log("✅ Customers fetched:", response.data);
+    return response.data;
+  } catch (error) {
+    console.error("❌ Error fetching customers:", error.response?.data || error);
+    throw error.response?.data || error;
+  }
+};
+
+// ✅ Delete customer by ID
+export const deleteCustomers = async (customerId) => {
+  try {
+    const response = await axiosInstance.delete(`/api/v1/customers/${customerId}`);
+    console.log("✅ Customer deleted:", response.data);
+    return response.data;
+  } catch (error) {
+    console.error("❌ Error deleting customer:", error.response?.data || error);
+    throw error.response?.data || error;
+  }
+};
+
+// ✅ Fetch all follow-ups or a specific follow-up
+export const fetchFollowUps = async (followUpId = null) => {
+  try {
+    const endpoint = followUpId 
+      ? `/api/v1/followup/${followUpId}` 
+      : "/api/v1/followup";
+    const response = await axiosInstance.get(endpoint);
+    console.log("✅ Follow-ups fetched:", response.data);
+    return response.data;
+  } catch (error) {
+    console.error("❌ Error fetching follow-ups:", error.response?.data || error);
+    throw error.response?.data || error;
+  }
+};
+
+// ✅ Add or Update follow-up (single endpoint for both)
+export const addFollowUp = async (followUpData) => {
+  try {
+    const response = await axiosInstance.post("/api/v1/followup/addOrUpdate", followUpData);
+    console.log("✅ Follow-up saved:", response.data);
+    return response.data;
+  } catch (error) {
+    console.error("❌ Error saving follow-up:", error.response?.data || error);
+    throw error.response?.data || error;
+  }
+};
+
+// ✅ Delete follow-up by ID
+export const deleteFollowUp = async (followUpId) => {
+  try {
+    const response = await axiosInstance.delete(`/api/v1/followup/${followUpId}`);
+    console.log("✅ Follow-up deleted:", response.data);
+    return response.data;
+  } catch (error) {
+    console.error("❌ Error deleting follow-up:", error.response?.data || error);
+    throw error.response?.data || error;
+  }
+};
+
+export const updateFollowUp = async (followUpId, updatedData) => {
+  try {
+    const payload = { followUpId, ...updatedData }; // backend expects shipmentId in body
+    const response = await axiosInstance.post("api/v1/followup/addOrUpdate", payload);
+    console.log("✅ Follow-up updated:", response.data);
+    return response.data;
+  } catch (error) {
+    console.error("❌ Error updating follow-up:", error.response?.data || error);
+    throw error.response?.data || error;
+  }
+};
+
+export const addLead = async (leadData) => {
+  try {
+    const response = await axiosInstance.post("/api/v1/leads/addOrUpdate", leadData);
+    console.log("✅ Leads saved:", response.data);
+    return response.data;
+  } catch (error) {
+    console.error("❌ Error saving Leads:", error.response?.data || error);
+    throw error.response?.data || error;
+  }
+};
+
+export const updateLeads = async (leadsId, updatedData) => {
+  try {
+    const payload = { leadsId, ...updatedData }; // backend expects shipmentId in body
+    const response = await axiosInstance.post("api/v1/leads/addOrUpdate", payload);
+    console.log("✅ Leads updated:", response.data);
+    return response.data;
+  } catch (error) {
+    console.error("❌ Error updating Leads:", error.response?.data || error);
+    throw error.response?.data || error;
+  }
+};
+
+export const addShipment = async (shipmentData) => {
+  try {
+    const response = await axiosInstance.post("/api/v1/shipment", shipmentData);
+    console.log("✅ Shipment added:", response.data);
+    return response.data;
+  } catch (error) {
+    console.error("❌ Error adding shipment:", error.response?.data || error);
+    throw error.response?.data || error;
+  }
+};
+
+// ✅ Update existing shipment (same endpoint but POST with shipmentId)
+export const updateShipment = async (shipmentId, updatedData) => {
+  try {
+    const payload = { shipmentId, ...updatedData }; // backend expects shipmentId in body
+    const response = await axiosInstance.post("/api/v1/shipment", payload);
+    console.log("✅ Shipment updated:", response.data);
+    return response.data;
+  } catch (error) {
+    console.error("❌ Error updating shipment:", error.response?.data || error);
+    throw error.response?.data || error;
+  }
+};
+
+export const fetchShipmentsById = (shipmentId) => {return axiosInstance.get(`/api/v1/shipment/${shipmentId}`);};
+  // axiosInstance.get(`/api/v1/shipment/`, { params: { id } });
+
+// ✅ Fetch all shipments (for company ID = 2, as per your backend)
+// export const fetchShipments = async (id) => {
+//   try {
+//     const response = await axiosInstance.get(`/api/v1/shipment/${id}`);
+//     console.log("✅ Shipments fetched:", response.data);
+//     return response.data;
+//   } catch (error) {
+//     console.error("❌ Error fetching shipments:", error.response?.data || error);
+//     throw error.response?.data || error;
+//   }
+// };
+
+// ✅ Delete shipment by ID
+export const deleteShipments = async (shipmentId) => {
+  try {
+    const response = await axiosInstance.delete(`/api/v1/shipment/${shipmentId}`);
+    console.log("✅ Shipment deleted:", response.data);
+    return response.data;
+  } catch (error) {
+    console.error("❌ Error deleting shipment:", error.response?.data || error);
+    throw error.response?.data || error;
+  }
+};
 
 export default axiosInstance;

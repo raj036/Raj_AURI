@@ -5,12 +5,11 @@ import { InputField, SelectField } from "../../Components/FormField";
 import { PrimaryButton, SecondaryButton } from "../../Components/Button";
 import "./AddLead.css";
 import Layout from "../../Components/Layout/Layout";
-import api from "../../Utils/api";
 import EditableData from "../../Components/EditableData";
 import Dots from "../../assets/dots-vertical.svg";
 import Delete from "../../assets/trash-01.svg";
 import Swal from "sweetalert2";
-import { addCustomers, addLead } from "../../Utils/apiServices.jsx";
+import {  addLead } from "../../Utils/apiServices";
 
 const AddLead = () => {
   const [showSnackbar, setShowSnackbar] = useState(false);
